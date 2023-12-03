@@ -5,6 +5,9 @@
             "all": true,
             "complexity": {
                 "noForEach": "off"
+            },
+            "nursery": {
+                "useImportRestrictions": "off"
             }
         }
     },

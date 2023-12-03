@@ -13,7 +13,7 @@ export const HeaderTitle = () => {
                 <HeaderText>programador</HeaderText>
                 <HeaderTextGradient> Fullstack.</HeaderTextGradient>
             </div>
-            <p className="text-xl text-gray-300 mt-2 text-center lg:text-left">
+            <p className="text-xl dark:text-gray-300 text-gray-600 mt-2 text-center lg:text-left">
                 I design and create functional and beautiful applications with passion and a focus
                 on user experience and high quality.
             </p>

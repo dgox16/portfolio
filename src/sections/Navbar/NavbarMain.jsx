@@ -1,8 +1,9 @@
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Switch } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
+import { NavbarButtonTheme } from "./NavbarButtonTheme";
 
 export const NavbarMain = () => {
     return (
-        <Navbar maxWidth={"xl"} isBordered>
+        <Navbar maxWidth={"xl"} isBordered={true}>
             <NavbarContent className="pr-3" justify="center">
                 <NavbarBrand>
                     <p className="font-bold text-inherit">PORTAFOLIO</p>
@@ -10,7 +11,7 @@ export const NavbarMain = () => {
             </NavbarContent>
             <NavbarContent justify="center">
                 <NavbarItem>
-                    <Switch defaultSelected color="primary" />
+                    <NavbarButtonTheme />
                 </NavbarItem>
             </NavbarContent>
         </Navbar>
