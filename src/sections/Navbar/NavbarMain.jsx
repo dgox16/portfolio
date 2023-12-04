@@ -1,5 +1,6 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
 import { NavbarButtonTheme } from "./NavbarButtonTheme";
+import { NavbarButtonLanguage } from "./NavbarButtonLanguage";
 
 export const NavbarMain = () => {
     return (
@@ -12,6 +13,9 @@ export const NavbarMain = () => {
             <NavbarContent justify="center">
                 <NavbarItem>
                     <NavbarButtonTheme />
+                </NavbarItem>
+                <NavbarItem>
+                    <NavbarButtonLanguage />
                 </NavbarItem>
             </NavbarContent>
         </Navbar>

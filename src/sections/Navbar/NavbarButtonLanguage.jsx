@@ -1,0 +1,39 @@
+import { Button } from "@nextui-org/react";
+import { useLanguageStore } from "../../store/languageStore";
+import ReactCountryFlag from "react-country-flag";
+
+export const NavbarButtonLanguage = () => {
+    const { inSpanish, changeLanguage } = useLanguageStore();
+    return (
+        <Button
+            color={inSpanish ? "secondary" : "danger"}
+            variant="flat"
+            isIconOnly={true}
+            onClick={() => {
+                changeLanguage();
+            }}
+        >
+            {inSpanish ? (
+                <ReactCountryFlag
+                    countryCode="GB"
+                    svg={true}
+                    style={{
+                        width: "1.7em",
+                        height: "1.7em",
+                    }}
+                    title="English"
+                />
+            ) : (
+                <ReactCountryFlag
+                    countryCode="ES"
+                    svg={true}
+                    style={{
+                        width: "1.7em",
+                        height: "1.7em",
+                    }}
+                    title="Español"
+                />
+            )}
+        </Button>
+    );
+};

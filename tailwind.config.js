@@ -44,6 +44,9 @@ export default {
                             DEFAULT: "#9a8dfd",
                             foreground: "#000000",
                         },
+                        secondary: {
+                            DEFAULT: "#006FEE",
+                        },
                         focus: "#BEF264",
                     },
                 },
@@ -52,6 +55,9 @@ export default {
                         primary: {
                             DEFAULT: "#8678f9",
                             foreground: "#000000",
+                        },
+                        secondary: {
+                            DEFAULT: "#006FEE",
                         },
                         focus: "#BEF264",
                     },
