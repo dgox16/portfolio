@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
-import { MoonIcon } from "../../assets/icons/MoonIcon";
-import { SunIcon } from "../../assets/icons/SunIcon";
 import { useThemeStore } from "../../store/themeStore";
+import { IconContext } from "react-icons";
+import { TbMoonFilled, TbSunFilled } from "react-icons/tb";
 
 export const NavbarButtonTheme = () => {
     const { darkMode, changeTheme } = useThemeStore();
@@ -14,7 +14,19 @@ export const NavbarButtonTheme = () => {
                 changeTheme();
             }}
         >
-            {darkMode ? <SunIcon /> : <MoonIcon />}
+            {darkMode ? (
+                <IconContext.Provider value={{ size: "20" }}>
+                    <div>
+                        <TbSunFilled />
+                    </div>
+                </IconContext.Provider>
+            ) : (
+                <IconContext.Provider value={{ size: "20" }}>
+                    <div>
+                        <TbMoonFilled />
+                    </div>
+                </IconContext.Provider>
+            )}
         </Button>
     );
 };
