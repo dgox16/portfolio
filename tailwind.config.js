@@ -9,9 +9,9 @@ export default {
     theme: {
         extend: {
             colors: {
-                "primary-100": "#9a8dfd",
-                "primary-50": "#b2a8fd",
-                "primary-200": "#8678f9",
+                "lavender-500": "#9a8dfd",
+                "lavender-300": "#b2a8fd",
+                "lavender-700": "#766CD8",
             },
             margin: {
                 "80px": "80px",
@@ -31,12 +31,17 @@ export default {
             "300%": "300%",
         },
         animation: {
-            gradient: "animatedgradient 2s ease infinite alternate",
+            gradient: "animatedgradient 5s ease infinite alternate",
+        },
+        fontFamily: {
+            display: ["Switzer"],
+            body: ["Inter"],
         },
     },
     darkMode: "class",
     plugins: [
         nextui({
+            addCommonColors: true,
             themes: {
                 dark: {
                     colors: {

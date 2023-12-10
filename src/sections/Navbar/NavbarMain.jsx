@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@nextui-org/react";
-import { NavbarButtonTheme } from "./NavbarButtonTheme";
-import { NavbarButtonLanguage } from "./NavbarButtonLanguage";
 import { useLanguageStore } from "../../store/languageStore";
+import { NavbarButtonLanguage } from "./NavbarButtonLanguage";
+import { NavbarButtonTheme } from "./NavbarButtonTheme";
 
 export const NavbarMain = () => {
     const { inSpanish } = useLanguageStore();

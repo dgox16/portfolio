@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
-import { useThemeStore } from "../../store/themeStore";
 import { IconContext } from "react-icons";
 import { TbMoonFilled, TbSunFilled } from "react-icons/tb";
+import { useThemeStore } from "../../store/themeStore";
 
 export const NavbarButtonTheme = () => {
     const { darkMode, changeTheme } = useThemeStore();

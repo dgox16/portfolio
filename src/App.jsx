@@ -1,6 +1,8 @@
 import { HeaderMain } from "./sections/Header/HeaderMain";
 import { NavbarMain } from "./sections/Navbar/NavbarMain";
 import { useThemeStore } from "./store/themeStore";
+import { SeparatorSection } from "./sections/SeparatorSection";
+import { SkillsMain } from "./sections/Skills/SkillsMain";
 
 function App() {
     const { darkMode } = useThemeStore();
@@ -13,7 +15,8 @@ function App() {
         >
             <NavbarMain />
             <HeaderMain />
-            <p>{darkMode}</p>
+            <SeparatorSection />
+            <SkillsMain />
         </main>
     );
 }
