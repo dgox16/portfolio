@@ -3,13 +3,14 @@ import { IconContext } from "react-icons";
 import { TbMoonFilled, TbSunFilled } from "react-icons/tb";
 import { useThemeStore } from "../../store/themeStore";
 
-export const NavbarButtonTheme = () => {
+export const ButtonTheme = () => {
     const { darkMode, changeTheme } = useThemeStore();
     return (
         <Button
             color={darkMode ? "warning" : "primary"}
             variant="flat"
             isIconOnly={true}
+            title="ChangeTheme"
             onClick={() => {
                 changeTheme();
             }}

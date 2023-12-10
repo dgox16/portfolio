@@ -2,13 +2,14 @@ import { Button } from "@nextui-org/react";
 import ReactCountryFlag from "react-country-flag";
 import { useLanguageStore } from "../../store/languageStore";
 
-export const NavbarButtonLanguage = () => {
+export const ButtonLanguage = () => {
     const { inSpanish, changeLanguage } = useLanguageStore();
     return (
         <Button
             color={inSpanish ? "secondary" : "danger"}
             variant="flat"
             isIconOnly={true}
+            title="ChangeLanguage"
             onClick={() => {
                 changeLanguage();
             }}

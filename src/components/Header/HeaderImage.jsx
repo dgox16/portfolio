@@ -1,5 +1,5 @@
 import { Image } from "@nextui-org/react";
-import photo from "../../../assets/images/photo.avif";
+import photo from "../../assets/images/photo.avif";
 
 export const HeaderImage = () => {
     return (

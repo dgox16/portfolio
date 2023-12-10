@@ -1,8 +1,9 @@
-import { HeaderMain } from "./sections/Header/HeaderMain";
-import { NavbarMain } from "./sections/Navbar/NavbarMain";
-import { useThemeStore } from "./store/themeStore";
+import { AboutMe } from "./sections/AboutMe";
+import { Header } from "./sections/Header";
+import { NavbarMain } from "./sections/Navbar";
 import { SeparatorSection } from "./sections/SeparatorSection";
-import { SkillsMain } from "./sections/Skills/SkillsMain";
+import { Skills } from "./sections/Skills";
+import { useThemeStore } from "./store/themeStore";
 
 function App() {
     const { darkMode } = useThemeStore();
@@ -14,9 +15,11 @@ function App() {
             }
         >
             <NavbarMain />
-            <HeaderMain />
+            <Header />
             <SeparatorSection />
-            <SkillsMain />
+            <Skills />
+            <SeparatorSection />
+            <AboutMe />
         </main>
     );
 }
