@@ -1,40 +1,31 @@
-import { Button } from "@nextui-org/react";
-import ReactCountryFlag from "react-country-flag";
 import { useLanguageStore } from "../../store/languageStore";
+import { motion } from "framer-motion";
 
 export const ButtonLanguage = () => {
     const { inSpanish, changeLanguage } = useLanguageStore();
     return (
-        <Button
-            color={inSpanish ? "secondary" : "danger"}
-            variant="flat"
-            isIconOnly={true}
+        <motion.button
+            whileHover={{
+                scale: 1.1,
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            className="flex justify-center rounded-xl text-text h-10 w-10 items-center font-display font-medium"
+            type="button"
             title="ChangeLanguage"
             onClick={() => {
                 changeLanguage();
             }}
         >
-            {inSpanish ? (
-                <ReactCountryFlag
-                    countryCode="GB"
-                    svg={true}
-                    style={{
-                        width: "1.7em",
-                        height: "1.7em",
-                    }}
-                    title="English"
-                />
-            ) : (
-                <ReactCountryFlag
-                    countryCode="ES"
-                    svg={true}
-                    style={{
-                        width: "1.7em",
-                        height: "1.7em",
-                    }}
-                    title="Español"
-                />
-            )}
-        </Button>
+            <motion.p
+                animate={inSpanish ? "open" : "closed"}
+                variants={{
+                    open: { opacity: [1, 0, 1], y: [0, -10, 0] },
+                    closed: { opacity: [1, 0, 1], y: [0, -10, 0] },
+                }}
+                transition={{ duration: 0.3 }}
+            >
+                {inSpanish ? "ENG" : "ESP"}
+            </motion.p>
+        </motion.button>
     );
 };

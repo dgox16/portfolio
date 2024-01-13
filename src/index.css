@@ -42,9 +42,6 @@
     font-display: swap;
 }
 
-body * {
-    transition-duration: 0ms;
-}
 
 body {
     font-family: "Inter";

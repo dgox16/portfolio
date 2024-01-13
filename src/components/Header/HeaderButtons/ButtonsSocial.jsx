@@ -1,64 +1,49 @@
-import { Button } from "@nextui-org/react";
+import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { TbMail } from "react-icons/tb";
 
+const OneButtonSocial = ({ children }) => {
+    return (
+        <motion.button
+            whileHover={{
+                scale: 1.06,
+            }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            whileTap={{ scale: 0.9 }}
+            type="button"
+            className="m-auto w-10 h-10  xs:w-12 rounded-xl xs:h-12 flex justify-center text-text items-center bg-crust border-2 border-text"
+            title="Instagram"
+        >
+            {children}
+        </motion.button>
+    );
+};
+
 export const ButtonsSocial = () => {
     return (
         <div className="flex justify-center lg:justify-normal col-span-7 mt-4 lg:mt-0">
-            <div className="gap-6 lg:gap-12 grid grid-cols-4 justify-center lg:justify-normal w-3/4 lg:w-1/4">
-                <Button
-                    variant="solid"
-                    isIconOnly={true}
-                    className="m-auto lg:m-0"
-                    color="default"
-                    title="Instagram"
-                >
+            <div className="lg:gap-14 grid grid-cols-4 justify-center lg:justify-normal w-4/5 lg:w-1/4">
+                <OneButtonSocial>
                     <IconContext.Provider value={{ size: "20" }}>
-                        <div>
-                            <FaInstagram />
-                        </div>
+                        <FaInstagram />
                     </IconContext.Provider>
-                </Button>
-                <Button
-                    variant="solid"
-                    isIconOnly={true}
-                    className="m-auto lg:m-0"
-                    color="default"
-                    title="Github"
-                >
+                </OneButtonSocial>
+                <OneButtonSocial>
                     <IconContext.Provider value={{ size: "20" }}>
-                        <div>
-                            <FaGithub />
-                        </div>
+                        <FaGithub />
                     </IconContext.Provider>
-                </Button>
-                <Button
-                    variant="solid"
-                    isIconOnly={true}
-                    className="m-auto lg:m-0"
-                    color="default"
-                    title="Linkedin"
-                >
+                </OneButtonSocial>
+                <OneButtonSocial>
                     <IconContext.Provider value={{ size: "20" }}>
-                        <div>
-                            <FaLinkedin />
-                        </div>
+                        <TbMail />
                     </IconContext.Provider>
-                </Button>
-                <Button
-                    variant="solid"
-                    isIconOnly={true}
-                    className="m-auto lg:m-0"
-                    color="default"
-                    title="Email"
-                >
+                </OneButtonSocial>
+                <OneButtonSocial>
                     <IconContext.Provider value={{ size: "20" }}>
-                        <div>
-                            <TbMail />
-                        </div>
+                        <FaLinkedin />
                     </IconContext.Provider>
-                </Button>
+                </OneButtonSocial>
             </div>
         </div>
     );

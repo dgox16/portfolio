@@ -1,6 +1,6 @@
-import { Card, CardBody } from "@nextui-org/react";
 import {
     BashIcon,
+    BootstrapIcon,
     CssIcon,
     DjangoIcon,
     DockerIcon,
@@ -9,18 +9,19 @@ import {
     HandlebarsIcon,
     HtmlIcon,
     JavascriptIcon,
-    LinuxIcon,
-    LuaIcon,
     MongoIcon,
     MySqlIcon,
-    NextJsIcon,
     NodeIcon,
     NpmIcon,
     PythonIcon,
     ReactIcon,
     TailwindIcon,
+    TypescriptIcon,
+    VimIcon,
     ViteIcon,
 } from "../../assets/icons/LogoIcons";
+import { useThemeStore } from "../../store/themeStore";
+import { motion } from "framer-motion";
 
 export const GridLogos = () => {
     const listIcons = [
@@ -39,27 +40,49 @@ export const GridLogos = () => {
         GitIcon,
         HandlebarsIcon,
         ViteIcon,
-        LinuxIcon,
-        LuaIcon,
+        VimIcon,
+        TypescriptIcon,
         BashIcon,
         NpmIcon,
-        NextJsIcon,
+        BootstrapIcon,
     ];
+
+    const orden = [0, 1, 2, 3, 4, 1, 2, 3, 4, 5, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7];
+    const { darkMode } = useThemeStore();
+    const container = {
+        hidden: { opacity: 0, scale: 0 },
+        show: {
+            opacity: 1,
+            scale: 1,
+        },
+    };
+    const item = {
+        hidden: { opacity: 0, scale: 0 },
+        show: (custom) => ({ opacity: 1, scale: 1, transition: { delay: 0.2 + custom * 0.06 } }),
+    };
+
     return (
         <div className="flex justify-center mx-7 xl:mx-0">
-            <Card className="w-full md:w-[122ch] bg-white">
-                <CardBody>
-                    <div className="gap-4 grid grid-cols-4 md:grid-cols-5">
-                        {/* biome-ignore lint/style/useNamingConvention: <explanation> */}
+            <card className="w-full md:w-recommend bg-mantle py-5 rounded-2xl">
+                <div>
+                    <motion.div
+                        variants={container}
+                        initial="hidden"
+                        whileInView="show"
+                        className="gap-4 grid grid-cols-4 md:grid-cols-5"
+                    >
                         {listIcons.map((Icon, index) => (
-                            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                            <div key={index} className="flex justify-center mt-4">
-                                <Icon width={90} height={90} />
-                            </div>
+                            <motion.div
+                                variants={item}
+                                custom={orden[index]}
+                                className="flex justify-center mt-4"
+                            >
+                                <Icon width={90} height={90} isLight={darkMode} />
+                            </motion.div>
                         ))}
-                    </div>
-                </CardBody>
-            </Card>
+                    </motion.div>
+                </div>
+            </card>
         </div>
     );
 };

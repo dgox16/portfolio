@@ -1,3 +1,11 @@
+import { AboutMeTitle } from "../components/AboutMe/AboutMeTitle";
+import { Grid } from "../components/AboutMe/Grid";
+
 export const AboutMe = () => {
-    return <div>AboutMeMain</div>;
+    return (
+        <>
+            <AboutMeTitle />
+            <Grid />
+        </>
+    );
 };

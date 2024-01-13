@@ -1,24 +1,28 @@
-import { Button } from "@nextui-org/react";
 import { TbFileDownload } from "react-icons/tb";
 import { IconContext } from "react-icons";
 import { useLanguageStore } from "../../../store/languageStore";
+import { motion } from "framer-motion";
 
 export const ButtonDownloadCv = () => {
     const { inSpanish } = useLanguageStore();
     return (
         <div className="flex justify-center lg:justify-normal col-span-2">
-            <Button
-                className="w-3/4 lg:w-full bg-gradient-to-tr from-lavender-500 to-red-100 dark:from-red-600 dark:via-red-500 dark:to-yellow-400 text-black font-medium"
-                startContent={
-                    <IconContext.Provider value={{ size: "20" }}>
-                        <div>
-                            <TbFileDownload />
-                        </div>
-                    </IconContext.Provider>
-                }
+            <motion.button
+                whileHover={{
+                    scale: 1.07,
+                }}
+                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                whileTap={{ scale: 0.9 }}
+                type="button"
+                className="w-4/5 lg:w-full text-base  flex items-center justify-center font-display text-xl font-bold rounded-xl h-12 bg-gradient-to-tr from-mauve to-pink"
             >
-                {inSpanish ? "Descargar CV" : "Download CV"}
-            </Button>
+                <IconContext.Provider value={{ size: "20" }}>
+                    <div className="mr-1">
+                        <TbFileDownload />
+                    </div>
+                </IconContext.Provider>
+                <p className="text-[15px]">{inSpanish ? "Descargar CV" : "Download CV"}</p>
+            </motion.button>
         </div>
     );
 };

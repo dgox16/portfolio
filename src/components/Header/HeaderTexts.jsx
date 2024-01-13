@@ -1,19 +1,19 @@
 export const TextTitleHeader = ({ children }) => {
     return (
-        <p
+        <h1
             className={
-                "text-[27px] sm:text-[40px] md:text-[50px] lg:text-[55px] font-display font-bold"
+                "text-[23px] xs:text-[25px] sm:text-[40px] md:text-[50px] lg:text-[55px] font-display font-bold text-text"
             }
         >
             {children}
-        </p>
+        </h1>
     );
 };
 
 export const TextTitleGradientHeader = ({ children }) => {
     return (
-        <p className="text-[27px] sm:text-[40px] whitespace-pre-wrap bg-gradient-to-tr from-lavender-700 via-lavender-500 to-red-200 dark:from-pink-600 dark:via-red-600 dark:to-yellow-400 text-transparent bg-clip-text bg-300% animate-gradient md:text-[50px] lg:text-[55px] font-display font-bold">
+        <h1 className="text-[23px] xs:text-[25px] sm:text-[40px] whitespace-pre-wrap bg-gradient-to-tr from-mauve to-pink text-transparent bg-clip-text md:text-[50px] lg:text-[55px] font-display font-bold">
             {children}
-        </p>
+        </h1>
     );
 };

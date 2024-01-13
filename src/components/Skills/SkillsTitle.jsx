@@ -4,11 +4,11 @@ export const SkillsTitle = () => {
     const { inSpanish } = useLanguageStore();
     return (
         <div className="mb-5">
-            <div className="flex justify-center mx-7 -mb-2 md:-mb-5 lg:-mb-7 xl:mx-0">
+            <div className="flex justify-center mx-7 -mb-4 md:-mb-6 lg:-mb-7 xl:mx-0">
                 <div className="w-full md:w-[122ch] text-center lg:text-left">
                     <p
                         className={
-                            "text-[20px] sm:text-[25px] md:text-[37px] lg:text-[43px] font-display font-medium"
+                            "text-[25px] sm:text-[30px] md:text-[37px] lg:text-[43px] font-display font-bold text-text"
                         }
                     >
                         {inSpanish ? "Habilidades de" : "Skills"}
@@ -17,7 +17,7 @@ export const SkillsTitle = () => {
             </div>
             <div className="flex justify-center mx-7 xl:mx-0">
                 <div className="w-full md:w-[122ch] text-center lg:text-left">
-                    <p className="text-[20px] sm:text-[25px] md:text-[37px] lg:text-[43px] font-display font-medium text-lavender-500 dark:text-red-400">
+                    <p className="text-[25px] sm:text-[30px] md:text-[37px] lg:text-[43px] font-display font-bold text-yellow">
                         {inSpanish ? "Programación" : "Programming"}
                     </p>
                 </div>

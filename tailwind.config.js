@@ -1,23 +1,21 @@
-const { nextui } = require("@nextui-org/react");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
-    content: [
-        "./src/**/*.{js,ts,jsx,tsx}",
-        "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-    ],
+    content: ["./src/**/*.{js,ts,jsx,tsx}"],
+    plugins: [require("@catppuccin/tailwindcss")],
+
     theme: {
+        screens: {
+            xs: "350px",
+            ...defaultTheme.screens,
+        },
         extend: {
-            colors: {
-                "lavender-500": "#9a8dfd",
-                "lavender-300": "#b2a8fd",
-                "lavender-700": "#766CD8",
-            },
             margin: {
                 "80px": "80px",
             },
             width: {
-                recommend: "122ch",
+                recommend: "123ch",
             },
         },
         keyframes: {
@@ -39,35 +37,4 @@ export default {
         },
     },
     darkMode: "class",
-    plugins: [
-        nextui({
-            addCommonColors: true,
-            themes: {
-                dark: {
-                    colors: {
-                        primary: {
-                            DEFAULT: "#9a8dfd",
-                            foreground: "#000000",
-                        },
-                        secondary: {
-                            DEFAULT: "#006FEE",
-                        },
-                        focus: "#BEF264",
-                    },
-                },
-                light: {
-                    colors: {
-                        primary: {
-                            DEFAULT: "#8678f9",
-                            foreground: "#000000",
-                        },
-                        secondary: {
-                            DEFAULT: "#006FEE",
-                        },
-                        focus: "#BEF264",
-                    },
-                },
-            },
-        }),
-    ],
 };
