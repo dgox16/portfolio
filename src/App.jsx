@@ -1,4 +1,5 @@
 import { AboutMe } from "./sections/AboutMe";
+import { Experience } from "./sections/Experience";
 import { Header } from "./sections/Header";
 import { NavbarMain } from "./sections/Navbar";
 import { SeparatorSection } from "./sections/SeparatorSection";
@@ -15,6 +16,8 @@ function App() {
             </header>
             <main>
                 <AboutMe />
+                <SeparatorSection />
+                <Experience />
                 <SeparatorSection />
                 <Skills />
             </main>

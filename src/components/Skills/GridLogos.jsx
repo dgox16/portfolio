@@ -22,8 +22,10 @@ import {
 } from "../../assets/icons/LogoIcons";
 import { useThemeStore } from "../../store/themeStore";
 import { motion } from "framer-motion";
+import { useScreenSize } from "../hooks/UseSizeWindow";
 
 export const GridLogos = () => {
+    const { width } = useScreenSize();
     const listIcons = [
         JavascriptIcon,
         ReactIcon,
@@ -47,7 +49,11 @@ export const GridLogos = () => {
         BootstrapIcon,
     ];
 
-    const orden = [0, 1, 2, 3, 4, 1, 2, 3, 4, 5, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7];
+    const orden =
+        width < 768
+            ? [0, 1, 2, 3, 1, 2, 3, 4, 2, 3, 4, 5, 3, 4, 5, 6, 4, 5, 6, 7]
+            : [0, 1, 2, 3, 4, 1, 2, 3, 4, 5, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7];
+
     const { darkMode } = useThemeStore();
     const container = {
         hidden: { opacity: 0, scale: 0 },

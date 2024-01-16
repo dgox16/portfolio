@@ -17,7 +17,7 @@ export const SkillsTitle = () => {
             </div>
             <div className="flex justify-center mx-7 xl:mx-0">
                 <div className="w-full md:w-recommend text-center lg:text-left">
-                    <p className="text-[25px] sm:text-[30px] md:text-[37px] lg:text-[43px] font-bold text-yellow">
+                    <p className="text-[25px] sm:text-[30px] md:text-[37px] lg:text-[43px] font-bold whitespace-pre-wrap bg-gradient-to-tr from-peach to-yellow text-transparent bg-clip-text">
                         {inSpanish ? "Programación" : "Programming"}
                     </p>
                 </div>

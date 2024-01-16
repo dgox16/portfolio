@@ -1,99 +1,57 @@
+import { ExperienceTitle } from "../components/Experience/ExperienceTitle";
+import { useLanguageStore } from "../store/languageStore";
+
 export const Experience = () => {
+    const { inSpanish } = useLanguageStore();
     return (
-        <div className="flex justify-center">
-            <div class="md:w-2/3">
-                <h1 class="font-bold italic mb-10">PROYECTOS</h1>
-
-                <div class="relative mt-5 text-left">
-                    <div class="flex items-center relative">
-                        <div class="hidden md:block w-20">
-                            <div class="font-bold italic">2020</div>
-                            <div class="md:flex space-x-1 text-xs">
-                                <div>Abr.</div>
-                                <div>-</div>
-                                <div>Jun.</div>
+        <>
+            <section className="items-center">
+                <div className="flex items-center flex-col justify-center mx-7 lg:py-8 lg:px-6">
+                    <ExperienceTitle />
+                    <div className="mx-auto my-2 w-full lg:w-[80ch]">
+                        <div className="relative flex justify-between">
+                            <div className="flex flex-col items-center w-10 mr-4 md:w-24">
+                                <div>
+                                    <div className="flex items-center justify-center w-8 h-8 bg-green/50 rounded-full ">
+                                        <div className="w-4 h-4 bg-green rounded-full" />
+                                    </div>
+                                </div>
+                                <div className="w-1 h-3/4 bg-green/50" />
                             </div>
-                        </div>
+                            <div>
+                                <h2 className="inline-block px-4 py-2 mb-4 font-medium bg-green rounded-3xl text-base text-xs xs:text-base">
+                                    {inSpanish
+                                        ? "Octubre 2022 - Actualidad"
+                                        : "October 2022 - Current"}
+                                </h2>
+                                <div className="relative flex-1 mb-10 bg-mantle shadow rounded-3xl">
+                                    <div className="relative z-20 p-4">
+                                        <p className="mb-2 text-xl font-bold text-text hidden sm:block">
+                                            {inSpanish
+                                                ? "Desarrollador Fullstack - SICAP VIP"
+                                                : "Fullstack developer - SICAP VIP"}
+                                        </p>
 
-                        <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
-                            <i class="fas fa-circle -top-1 -ml-2 absolute"></i>
-                        </div>
-
-                        <div class="ml-10">
-                            <div class="font-bold">Proyecto 1</div>
-                            <div class="italic md:mb-4">Empresa 1</div>
-                            <div class="mb-4 mt-2 md:hidden">
-                                <div class="font-bold">2020</div>
-                                <div class="text-xs">Abril - Junio</div>
-                            </div>
-                            <div class="mb-10">
-                                Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas
-                                id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis,
-                                consectetur sed elit sed, vestibulum ultrices nibh.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center relative">
-                        <div class="hidden md:block w-20">
-                            <div class="font-bold italic">2020</div>
-                            <div class="md:flex space-x-1 text-xs">
-                                <div>Jul.</div>
-                                <div>-</div>
-                                <div>Ago.</div>
-                            </div>
-                        </div>
-
-                        <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
-                            <i class="fas fa-circle -top-1 -ml-2 absolute"></i>
-                        </div>
-
-                        <div class="ml-10">
-                            <div class="font-bold">Proyecto 2</div>
-                            <div class="italic md:mb-4">Empresa 2</div>
-                            <div class="mb-4 mt-2 md:hidden">
-                                <div class="font-bold">2020</div>
-                                <div class="text-xs">Julio - Agosto</div>
-                            </div>
-                            <div class="mb-10">
-                                Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas
-                                id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis,
-                                consectetur sed elit sed, vestibulum ultrices nibh.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex items-center relative">
-                        <div class="hidden md:block w-20">
-                            <div class="font-bold italic">2020</div>
-                            <div class="md:flex space-x-1 text-xs">
-                                <div>Ago.</div>
-                                <div>-</div>
-                                <div>Hoy.</div>
-                            </div>
-                        </div>
-
-                        <div class="border-r-2 border-black absolute h-full left-1 md:left-20 top-2 z-10">
-                            <i class="fas fa-circle -top-1 -ml-2 absolute"></i>
-                            <i class="fas fa-circle bottom-0 -ml-2 absolute"></i>
-                        </div>
-
-                        <div class="ml-10">
-                            <div class="font-bold">Proyecto 3</div>
-                            <div class="italic md:mb-4">Empresa 3</div>
-                            <div class="mb-4 mt-2 md:hidden">
-                                <div class="font-bold">2020</div>
-                                <div class="text-xs">Agosto - Hoy</div>
-                            </div>
-                            <div class="mb-10">
-                                Fusce auctor gravida dui, ut tristique nisi aliquam quis. Maecenas
-                                id ligula ac dui mollis tempor. Sed vitae ex eros. Proin nisl felis,
-                                consectetur sed elit sed, vestibulum ultrices nibh.
+                                        <p className="text-sm xs:text-[1rem] font-bold text-text block sm:hidden">
+                                            {inSpanish
+                                                ? "Desarrollador Fullstack"
+                                                : "Fullstack developer"}
+                                        </p>
+                                        <p className="mb-2 text-sm xs:text-[1rem] font-medium text-text block sm:hidden">
+                                            SICAP VIP
+                                        </p>
+                                        <p className="text-sm xs:text-[1rem] text-subtext1">
+                                            {inSpanish
+                                                ? "Desarrollo y actualizo tecnologías de aplicaciones web enfocadas al área de préstamos. Para este trabajo contribuyo como programador backend en Django y Sqlite3; mientras que uso Bootstrap y Vanilla JS para frontend."
+                                                : "I develop and update web application technologies focused on the loan sector. For this job, I contribute as a backend programmer in Django and Sqlite3, while using Bootstrap and Vanilla JS for the frontend."}
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     );
 };
