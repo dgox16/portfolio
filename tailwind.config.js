@@ -15,7 +15,7 @@ export default {
                 "80px": "80px",
             },
             width: {
-                recommend: "123ch",
+                recommend: "115ch",
             },
         },
         keyframes: {
@@ -32,8 +32,8 @@ export default {
             gradient: "animatedgradient 5s ease infinite alternate",
         },
         fontFamily: {
-            display: ["Switzer"],
-            body: ["Inter"],
+            display: ["Onest Variable"],
+            body: ["Onest Variable"],
         },
     },
     darkMode: "class",

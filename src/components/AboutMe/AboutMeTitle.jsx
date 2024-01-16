@@ -8,7 +8,7 @@ export const AboutMeTitle = () => {
             <div className="w-full md:w-[70ch] lg:w-[130ch]">
                 <p
                     className={
-                        "text-[22px] xs:text-[25px] text-text text-center sm:text-[30px] md:text-[37px] lg:text-[43px] font-display font-bold"
+                        "text-[22px] xs:text-[25px] text-text text-center sm:text-[30px] md:text-[37px] lg:text-[43px] font-bold"
                     }
                 >
                     {inSpanish ? "Acerca de Mí" : "About Me"}

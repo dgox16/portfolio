@@ -63,7 +63,7 @@ export const GridLogos = () => {
 
     return (
         <div className="flex justify-center mx-7 xl:mx-0">
-            <card className="w-full md:w-recommend bg-mantle py-5 rounded-2xl">
+            <div className="w-full md:w-recommend bg-mantle p-5 rounded-2xl">
                 <div>
                     <motion.div
                         variants={container}
@@ -74,6 +74,7 @@ export const GridLogos = () => {
                         {listIcons.map((Icon, index) => (
                             <motion.div
                                 variants={item}
+                                key={index}
                                 custom={orden[index]}
                                 className="flex justify-center mt-4"
                             >
@@ -82,7 +83,7 @@ export const GridLogos = () => {
                         ))}
                     </motion.div>
                 </div>
-            </card>
+            </div>
         </div>
     );
 };

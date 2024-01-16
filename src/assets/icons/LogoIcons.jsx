@@ -149,6 +149,11 @@ export const MySqlIcon = ({ width, height, isLight }) => {
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
             viewBox="0 0 256 252"
+            className={
+                isLight
+                    ? "hover:drop-shadow-[0_0_1.3em_#6698a6] duration-500"
+                    : "hover:drop-shadow-[0_0_1.3em_#00546B] duration-500"
+            }
         >
             <title>MySQL</title>
             <path
@@ -168,6 +173,7 @@ export const DockerIcon = ({ width, height }) => {
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             fill="#008fe2"
+            className="hover:drop-shadow-[0_0_1.3em_#008fe2] duration-500"
         >
             <title>Docker</title>
             <path d="M13.98 11.08h2.12a.19.19 0 0 0 .19-.19V9.01a.19.19 0 0 0-.19-.19h-2.12a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.95-5.43h2.12a.19.19 0 0 0 .18-.19V3.57a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m0 2.71h2.12a.19.19 0 0 0 .18-.18V6.29a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.89c0 .1.09.18.19.18m-2.93 0h2.12a.19.19 0 0 0 .18-.18V6.29a.18.18 0 0 0-.18-.18H8.1a.18.18 0 0 0-.18.18v1.89c0 .1.08.18.18.18m-2.96 0h2.11a.19.19 0 0 0 .19-.18V6.29a.18.18 0 0 0-.19-.18H5.14a.19.19 0 0 0-.19.18v1.89c0 .1.08.18.19.18m5.89 2.72h2.12a.19.19 0 0 0 .18-.19V9.01a.19.19 0 0 0-.18-.19h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m-2.93 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H8.1a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.96 0h2.11a.18.18 0 0 0 .19-.19V9.01a.18.18 0 0 0-.18-.19H5.14a.19.19 0 0 0-.19.19v1.88c0 .1.08.19.19.19m-2.92 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H2.22a.18.18 0 0 0-.19.18v1.9c0 .1.08.18.19.18m21.54-1.19c-.06-.05-.67-.51-1.95-.51-.34 0-.68.03-1.01.09a3.77 3.77 0 0 0-1.72-2.57l-.34-.2-.23.33a4.6 4.6 0 0 0-.6 1.43c-.24.97-.1 1.88.4 2.66a4.7 4.7 0 0 1-1.75.42H.76a.75.75 0 0 0-.76.75 11.38 11.38 0 0 0 .7 4.06 6.03 6.03 0 0 0 2.4 3.12c1.18.73 3.1 1.14 5.28 1.14.98 0 1.96-.08 2.93-.26a12.25 12.25 0 0 0 3.82-1.4 10.5 10.5 0 0 0 2.61-2.13c1.25-1.42 2-3 2.55-4.4h.23c1.37 0 2.21-.55 2.68-1 .3-.3.55-.66.7-1.06l.1-.28Z" />
@@ -183,6 +189,7 @@ export const TailwindIcon = ({ width, height }) => {
             height={height}
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
+            className="hover:drop-shadow-[0_0_1.3em_#0ED7B5] duration-500"
         >
             <title>Tailwind CSS</title>
             <defs>
@@ -207,6 +214,7 @@ export const PythonIcon = ({ width, height }) => {
             height={height}
             fill="none"
             viewBox="14 14 35 35"
+            className="hover:drop-shadow-[0_0_1.3em_#387EB8] duration-500"
         >
             <title>Python</title>
             <path
@@ -246,7 +254,13 @@ export const PythonIcon = ({ width, height }) => {
 };
 export const DjangoIcon = ({ width, height }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="2 0 28 28">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={width}
+            height={height}
+            viewBox="2 0 28 28"
+            className="hover:drop-shadow-[0_0_1.3em_#44B78B] duration-500"
+        >
             <title>Django</title>
             <path
                 d="M14.135 4H18.1v18.169a26.218 26.218 0 0 1-5.143.535c-4.842-.005-7.362-2.168-7.362-6.322 0-4 2.673-6.6 6.816-6.6a6.448 6.448 0 0 1 1.724.2V4Zm0 9.142a3.992 3.992 0 0 0-1.337-.2c-2 0-3.163 1.223-3.163 3.366 0 2.087 1.107 3.239 3.138 3.239a9.355 9.355 0 0 0 1.362-.1v-6.3Z"
@@ -268,6 +282,7 @@ export const GitIcon = ({ width, height }) => {
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
             viewBox="0 0 256 256"
+            className="hover:drop-shadow-[0_0_1.3em_#DE4C36] duration-500"
         >
             <title>Git</title>
             <path
@@ -280,7 +295,17 @@ export const GitIcon = ({ width, height }) => {
 
 export const HandlebarsIcon = ({ width, height, isLight }) => {
     return (
-        <svg viewBox="0 0 32 32" width={width} height={height} xmlns="http://www.w3.org/2000/svg">
+        <svg
+            viewBox="0 0 32 32"
+            width={width}
+            height={height}
+            xmlns="http://www.w3.org/2000/svg"
+            className={
+                isLight
+                    ? "hover:drop-shadow-[0_0_1.3em_#FFF] duration-500"
+                    : "hover:drop-shadow-[0_0_1.3em_#000] duration-500"
+            }
+        >
             <title>Handlebars</title>
             <path
                 d="M3.34 15.658c.282-.232.488-.543.59-.893a1.055 1.055 0 00-.59-1.356c-1.733-.878-2.852.686-3.014 1.05s-.448.942-.267 2.26.817 2.535 2.806 3.014c1.903.442 3.9.21 5.65-.66l5.88-2.452a7.21 7.21 0 011.661-.207V14.41a4.6 4.6 0 00-4.453-2.343c-3.176.25-4.438 1.884-5.2 2.584s-2.207 2.35-3.168 2.06-1.232-1.477-.893-1.842.606-.3.817 0c.13.242.194.513.188.787z"
@@ -302,6 +327,7 @@ export const ViteIcon = ({ width, height }) => {
             height={height}
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
+            className="hover:drop-shadow-[0_0_1.3em_#BD34FE] duration-500"
         >
             <title>Vite</title>
             <defs>
@@ -335,6 +361,7 @@ export const VimIcon = ({ width, height }) => {
             height={height}
             preserveAspectRatio="xMidYMid"
             viewBox="0 0 256 257"
+            className="hover:drop-shadow-[0_0_1.3em_#45FE02] duration-500"
         >
             <title>Vim</title>
             <path d="M128.3 2 1.9 127.9l126.4 126.5L254 127.9 128.3 1.9" fill="#019833" />
@@ -383,6 +410,7 @@ export const TypescriptIcon = ({ width, height }) => {
             height={height}
             xmlns="http://www.w3.org/2000/svg"
             preserveAspectRatio="xMidYMid"
+            className="hover:drop-shadow-[0_0_1.3em_#3178C6] duration-500"
         >
             <title>TypeScript</title>
             <path
@@ -399,7 +427,17 @@ export const TypescriptIcon = ({ width, height }) => {
 
 export const BashIcon = ({ width, height, isLight }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 32 32">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={width}
+            height={height}
+            viewBox="0 0 32 32"
+            className={
+                isLight
+                    ? "hover:drop-shadow-[0_0_1.3em_#FFF] duration-500"
+                    : "hover:drop-shadow-[0_0_1.3em_#000] duration-500"
+            }
+        >
             <title>Bash</title>
             <path
                 fill={isLight ? "#fff" : "#000"}
@@ -412,7 +450,13 @@ export const BashIcon = ({ width, height, isLight }) => {
 
 export const NpmIcon = ({ width, height }) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 128 128">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={width}
+            height={height}
+            viewBox="0 0 128 128"
+            className="hover:drop-shadow-[0_0_1.3em_#CB3837] duration-500"
+        >
             <title>Npm</title>
             <path
                 fill="#cb3837"
@@ -430,6 +474,7 @@ export const BootstrapIcon = ({ width, height }) => {
             width={width}
             height={height}
             preserveAspectRatio="xMidYMid"
+            className="hover:drop-shadow-[0_0_1.3em_#7E13F8] duration-500"
         >
             <title>Bootstrap</title>
             <path

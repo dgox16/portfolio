@@ -3,6 +3,7 @@ import { Header } from "./sections/Header";
 import { NavbarMain } from "./sections/Navbar";
 import { SeparatorSection } from "./sections/SeparatorSection";
 import { Skills } from "./sections/Skills";
+import "@fontsource-variable/onest";
 
 function App() {
     return (

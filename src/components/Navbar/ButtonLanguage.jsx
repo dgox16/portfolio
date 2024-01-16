@@ -9,7 +9,7 @@ export const ButtonLanguage = () => {
                 scale: 1.1,
             }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
-            className="flex justify-center rounded-xl text-text h-10 w-10 items-center font-display font-medium"
+            className="flex justify-center rounded-xl text-text h-10 w-10 items-center font-semibold"
             type="button"
             title="ChangeLanguage"
             onClick={() => {
