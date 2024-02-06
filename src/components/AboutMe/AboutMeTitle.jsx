@@ -1,10 +1,17 @@
+import { motion } from "framer-motion";
 import { useLanguageStore } from "../../store/languageStore";
 
 export const AboutMeTitle = () => {
     const { inSpanish } = useLanguageStore();
 
     return (
-        <div className="flex justify-center mx-7 xl:mx-0 mb-7 md:mb-16">
+        <motion.div
+            className="flex justify-center mx-7 xl:mx-0 mb-7 md:mb-16"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.25 }}
+        >
             <div className="w-full lg:w-recommend">
                 <p
                     className={
@@ -25,6 +32,6 @@ export const AboutMeTitle = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { ExperienceTitle } from "../components/Experience/ExperienceTitle";
 import { useLanguageStore } from "../store/languageStore";
@@ -16,31 +17,43 @@ export const Experience = () => {
         },
     ];
     return (
-        <>
-            <div className="flex flex-col justify-center mx-7 xl:mx-0">
-                <ExperienceTitle />
-                {experience.map((item, index) => (
-                    // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                    <React.Fragment key={index}>
-                        <div className="bg-green rounded-3xl p-2 px-6 my-3 md:my-8 inline-block mx-auto">
-                            <p className="text-[19px] font-medium text-base">{item.date}</p>
+        <div className="flex flex-col justify-center mx-7 xl:mx-0">
+            <ExperienceTitle />
+            {experience.map((item, index) => (
+                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                <React.Fragment key={index}>
+                    <motion.div
+                        className="bg-green rounded-3xl p-2 px-6 my-3 md:my-8 inline-block mx-auto"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.25 }}
+                    >
+                        <p className="text-[17px] md:text-[19px] font-medium text-base">
+                            {item.date}
+                        </p>
+                    </motion.div>
+                    <motion.div
+                        className="flex justify-center"
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.25 }}
+                    >
+                        <div className="w-full md:w-recommend bg-mantle p-8 rounded-2xl">
+                            <p className="text-[18px] xs:text-[20px] sm:text-[25px] md:text-[30px] font-bold text-text">
+                                {item.job}
+                            </p>
+                            <p className="text-[16px] xs:text-[18px]  sm:text-[20px] md:text-[25px] font-medium text-text mb-4">
+                                {item.company}
+                            </p>
+                            <p className="text-[14px] xs:text-[17px] md:text-[20px] text-subtext1 text-pretty">
+                                {item.description}
+                            </p>
                         </div>
-                        <div className="flex justify-center">
-                            <div className="w-full md:w-recommend bg-mantle p-8 rounded-2xl">
-                                <p className="text-[18px] xs:text-[20px] sm:text-[25px] md:text-[30px] font-bold text-text">
-                                    {item.job}
-                                </p>
-                                <p className="text-[16px] xs:text-[18px]  sm:text-[20px] md:text-[25px] font-medium text-text mb-4">
-                                    {item.company}
-                                </p>
-                                <p className="text-[14px] xs:text-[17px] md:text-[20px] text-subtext1">
-                                    {item.description}
-                                </p>
-                            </div>
-                        </div>
-                    </React.Fragment>
-                ))}
-            </div>
-        </>
+                    </motion.div>
+                </React.Fragment>
+            ))}
+        </div>
     );
 };

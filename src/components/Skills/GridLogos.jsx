@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
     BashIcon,
     BootstrapIcon,
@@ -22,7 +23,6 @@ import {
 } from "../../assets/icons/LogoIcons";
 import { useScreenSize } from "../../hooks/UseSizeWindow";
 import { useThemeStore } from "../../store/themeStore";
-import { motion } from "framer-motion";
 
 export const GridLogos = () => {
     const { width } = useScreenSize();
@@ -75,6 +75,7 @@ export const GridLogos = () => {
                         variants={container}
                         initial="hidden"
                         whileInView="show"
+                        viewport={{ once: true }}
                         className="gap-4 grid grid-cols-4 md:grid-cols-5"
                     >
                         {listIcons.map((Icon, index) => (
