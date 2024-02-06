@@ -20,9 +20,9 @@ import {
     VimIcon,
     ViteIcon,
 } from "../../assets/icons/LogoIcons";
+import { useScreenSize } from "../../hooks/UseSizeWindow";
 import { useThemeStore } from "../../store/themeStore";
 import { motion } from "framer-motion";
-import { useScreenSize } from "../hooks/UseSizeWindow";
 
 export const GridLogos = () => {
     const { width } = useScreenSize();
