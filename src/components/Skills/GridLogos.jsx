@@ -53,7 +53,9 @@ export const GridLogos = () => {
             <div className="w-full md:w-recommend bg-mantle p-5 rounded-2xl">
                 <div className="gap-4 grid grid-cols-4 md:grid-cols-5">
                     {listIcons.map((Icon, index) => (
-                        <Icon width={90} height={90} isLight={darkMode} key={index} />
+                        <div key={index} className="flex justify-center mt-4">
+                            <Icon width={90} height={90} isLight={darkMode} />
+                        </div>
                     ))}
                 </div>
             </div>
