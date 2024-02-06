@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
     BashIcon,
     BootstrapIcon,
@@ -21,11 +20,9 @@ import {
     VimIcon,
     ViteIcon,
 } from "../../assets/icons/LogoIcons";
-import { useScreenSize } from "../../hooks/UseSizeWindow";
 import { useThemeStore } from "../../store/themeStore";
 
 export const GridLogos = () => {
-    const { width } = useScreenSize();
     const listIcons = [
         JavascriptIcon,
         ReactIcon,
@@ -49,46 +46,15 @@ export const GridLogos = () => {
         BootstrapIcon,
     ];
 
-    const orden =
-        width < 768
-            ? [0, 1, 2, 3, 1, 2, 3, 4, 2, 3, 4, 5, 3, 4, 5, 6, 4, 5, 6, 7]
-            : [0, 1, 2, 3, 4, 1, 2, 3, 4, 5, 2, 3, 4, 5, 6, 3, 4, 5, 6, 7];
-
     const { darkMode } = useThemeStore();
-    const container = {
-        hidden: { opacity: 0, scale: 0 },
-        show: {
-            opacity: 1,
-            scale: 1,
-        },
-    };
-    const item = {
-        hidden: { opacity: 0, scale: 0 },
-        show: (custom) => ({ opacity: 1, scale: 1, transition: { delay: 0.2 + custom * 0.06 } }),
-    };
 
     return (
         <div className="flex justify-center mx-7 xl:mx-0">
             <div className="w-full md:w-recommend bg-mantle p-5 rounded-2xl">
-                <div>
-                    <motion.div
-                        variants={container}
-                        initial="hidden"
-                        whileInView="show"
-                        viewport={{ once: true }}
-                        className="gap-4 grid grid-cols-4 md:grid-cols-5"
-                    >
-                        {listIcons.map((Icon, index) => (
-                            <motion.div
-                                variants={item}
-                                key={index}
-                                custom={orden[index]}
-                                className="flex justify-center mt-4"
-                            >
-                                <Icon width={90} height={90} isLight={darkMode} />
-                            </motion.div>
-                        ))}
-                    </motion.div>
+                <div className="gap-4 grid grid-cols-4 md:grid-cols-5">
+                    {listIcons.map((Icon, index) => (
+                        <Icon width={90} height={90} isLight={darkMode} key={index} />
+                    ))}
                 </div>
             </div>
         </div>

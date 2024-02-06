@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import React from "react";
 import { ExperienceTitle } from "../components/Experience/ExperienceTitle";
 import { useLanguageStore } from "../store/languageStore";
@@ -22,24 +21,12 @@ export const Experience = () => {
             {experience.map((item, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 <React.Fragment key={index}>
-                    <motion.div
-                        className="bg-green rounded-3xl p-2 px-6 my-3 md:my-8 inline-block mx-auto"
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.25 }}
-                    >
+                    <div className="bg-green rounded-3xl p-2 px-6 my-3 md:my-8 inline-block mx-auto">
                         <p className="text-[17px] md:text-[19px] font-medium text-base">
                             {item.date}
                         </p>
-                    </motion.div>
-                    <motion.div
-                        className="flex justify-center"
-                        initial={{ opacity: 0, scale: 0 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.25 }}
-                    >
+                    </div>
+                    <div className="flex justify-center">
                         <div className="w-full md:w-recommend bg-mantle p-8 rounded-2xl">
                             <p className="text-[18px] xs:text-[20px] sm:text-[25px] md:text-[30px] font-bold text-text">
                                 {item.job}
@@ -51,7 +38,7 @@ export const Experience = () => {
                                 {item.description}
                             </p>
                         </div>
-                    </motion.div>
+                    </div>
                 </React.Fragment>
             ))}
         </div>
