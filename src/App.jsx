@@ -2,6 +2,7 @@ import { AboutMe } from "./sections/AboutMe";
 import { Experience } from "./sections/Experience";
 import { Header } from "./sections/Header";
 import { NavbarMain } from "./sections/Navbar";
+import { Projects } from "./sections/Projects";
 import { SeparatorSection } from "./sections/SeparatorSection";
 import { Skills } from "./sections/Skills";
 import "@fontsource-variable/onest";
@@ -18,6 +19,8 @@ function App() {
                 <AboutMe />
                 <SeparatorSection />
                 <Experience />
+                <SeparatorSection />
+                <Projects />
                 <SeparatorSection />
                 <Skills />
             </main>

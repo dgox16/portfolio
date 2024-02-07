@@ -1,10 +1,12 @@
 import { GridLogos } from "../components/Skills/GridLogos";
-import { SkillsTitle } from "../components/Skills/SkillsTitle";
+import { TitleText } from "../components/Texts/TitleText";
+import { useLanguageStore } from "../store/languageStore";
 
 export const Skills = () => {
+    const { inSpanish } = useLanguageStore();
     return (
         <>
-            <SkillsTitle />
+            <TitleText color={"yellow"}>{inSpanish ? "Mis Habilidades" : "My Skills"}</TitleText>
             <GridLogos />
         </>
     );

@@ -1,4 +1,5 @@
 import { useLanguageStore } from "../../store/languageStore";
+import { TitleText } from "../Texts/TitleText";
 
 export const AboutMeTitle = () => {
     const { inSpanish } = useLanguageStore();
@@ -6,13 +7,7 @@ export const AboutMeTitle = () => {
     return (
         <div className="flex justify-center mx-7 xl:mx-0 mb-7 md:mb-16">
             <div className="w-full lg:w-recommend">
-                <p
-                    className={
-                        "text-[22px] xs:text-[25px] text-text text-center sm:text-[30px] md:text-[37px] lg:text-[43px] font-bold"
-                    }
-                >
-                    {inSpanish ? "Acerca de Mí" : "About Me"}
-                </p>
+                <TitleText color={"blue"}>{inSpanish ? "Acerca de Mi" : "About Me"}</TitleText>
                 <div className="flex justify-center">
                     <p
                         className={

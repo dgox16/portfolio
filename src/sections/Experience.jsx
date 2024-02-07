@@ -1,6 +1,6 @@
 import React from "react";
-import { ExperienceTitle } from "../components/Experience/ExperienceTitle";
 import { useLanguageStore } from "../store/languageStore";
+import { TitleText } from "../components/Texts/TitleText";
 
 export const Experience = () => {
     const { inSpanish } = useLanguageStore();
@@ -17,7 +17,9 @@ export const Experience = () => {
     ];
     return (
         <div className="flex flex-col justify-center mx-7 xl:mx-0">
-            <ExperienceTitle />
+            <TitleText color={"green"}>
+                {inSpanish ? "Experiencia Laboral" : "Work experience"}
+            </TitleText>
             {experience.map((item, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 <React.Fragment key={index}>
