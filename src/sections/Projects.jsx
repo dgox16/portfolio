@@ -29,7 +29,7 @@ export const Projects = () => {
             description: inSpanish
                 ? "Tienda Online de tus películas favoritas. Interfaz creada con React y Tailwind. Cuenta con autenticación con JWT y base de datos MongoDB."
                 : "Online store for your favorite movies. Interface created with React and Tailwind. Features authentication with JWT and MongoDB database.",
-            link: "https://svgl.vercel.app/",
+            link: "https://penguin-movies.vercel.app/",
             github: "https://github.com/dgox16/penguin-movies",
             image: penguinMovies,
             tags: [TAGS.REACT, TAGS.MONGO],
@@ -98,7 +98,7 @@ export const Projects = () => {
                                                 whileTap={{ scale: 0.9 }}
                                                 type="button"
                                                 className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text"
-                                                href={github}
+                                                href={link}
                                                 role="link"
                                             >
                                                 Preview
