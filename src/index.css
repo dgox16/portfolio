@@ -19,10 +19,10 @@ body {
         "Segoe UI Emoji",
         "Segoe UI Symbol",
         "Noto Color Emoji";
+    /* background-color: blue; */
 }
 
 html,
 body {
     overflow-x: hidden;
 }
-

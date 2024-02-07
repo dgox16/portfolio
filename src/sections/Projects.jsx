@@ -7,20 +7,22 @@ import penguinMovies from "../assets/images/penguin-movies.avif";
 
 export const Projects = () => {
     const { inSpanish } = useLanguageStore();
+
     const TAGS = {
         REACT: {
             name: "React JS",
-            class: "bg-blue text-mantle",
+            className: "bg-blue text-mantle",
         },
         TAILWIND: {
             name: "Tailwind CSS",
-            class: "bg-[#003159] text-white",
+            className: "bg-[#003159] text-white",
         },
         MONGO: {
             name: "MongoDB",
-            class: "bg-green text-mantle",
+            className: "bg-green text-mantle",
         },
     };
+
     const PROJECTS = [
         {
             title: "Penguin Movies",
@@ -35,24 +37,24 @@ export const Projects = () => {
     ];
 
     return (
-        <div className="flex flex-col justify-center mx-7 xl:mx-0">
+        <div className="flex flex-col justify-center mx-7 xl:mx-0" id="projects">
             <TitleText color={"red"}>{inSpanish ? "Mis Proyectos" : "My Projects"}</TitleText>
             {PROJECTS.map(({ image, title, description, tags, link, github }, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                <div className="flex justify-center mt-6 mb-4" key={index}>
+                <div className="flex justify-center mb-4" key={index}>
                     <div className="w-full md:w-recommend bg-mantle p-2 md:p-5 rounded-2xl">
                         <div className="gap-5 md:gap-16 grid grid-cols-1 md:grid-cols-2">
                             <img alt="Diego Armando" className="rounded-2xl my-auto" src={image} />
                             <div className="flex items-center text-center md:text-left">
-                                <div class="flex flex-col">
-                                    <h3 class="text-[18px] xs:text-[20px] sm:text-[25px] md:text-[30px] font-bold text-text mb-2 lg:mb-5">
+                                <div className="flex flex-col">
+                                    <h3 className="text-[18px] xs:text-[20px] sm:text-[25px] md:text-[30px] font-bold text-text mb-2 lg:mb-5">
                                         {title}
                                     </h3>
-                                    <ul class="flex flex-row mb-1 justify-center md:justify-start lg:mb-4 gap-x-2">
-                                        {tags.map((tag) => (
-                                            <li>
+                                    <ul className="flex flex-row mb-1 justify-center md:justify-start lg:mb-4 gap-x-2">
+                                        {tags.map((tag, i) => (
+                                            <li key={`tag${i}`}>
                                                 <span
-                                                    class={`flex gap-x-2 rounded-xl text-[12px] md:text-[17px] font-medium ${tag.class} py-1 px-2 `}
+                                                    className={`flex gap-x-2 rounded-xl text-[12px] md:text-[17px] font-medium ${tag.className} py-1 px-2 `}
                                                 >
                                                     {tag.name}
                                                 </span>
@@ -60,10 +62,10 @@ export const Projects = () => {
                                         ))}
                                     </ul>
 
-                                    <div class="mt-2 text-[14px] xs:text-[17px] md:text-[20px] text-subtext1">
+                                    <div className="mt-2 text-[14px] xs:text-[17px] md:text-[20px] text-subtext1">
                                         {description}
                                     </div>
-                                    <footer class="flex items-end justify-center md:justify-start mb-2 md:mb-0  mt-2 lg:mt-4 gap-x-4">
+                                    <footer className="flex items-end justify-center md:justify-start mb-2 md:mb-0  mt-2 lg:mt-4 gap-x-4">
                                         {github && (
                                             <motion.a
                                                 whileHover={{

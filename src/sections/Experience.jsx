@@ -16,7 +16,7 @@ export const Experience = () => {
         },
     ];
     return (
-        <div className="flex flex-col justify-center mx-7 xl:mx-0">
+        <div className="flex flex-col justify-center mx-7 xl:mx-0" id="experience">
             <TitleText color={"green"}>
                 {inSpanish ? "Experiencia Laboral" : "Work experience"}
             </TitleText>
