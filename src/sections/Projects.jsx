@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { TitleText } from "../components/Texts/TitleText";
 import { useLanguageStore } from "../store/languageStore";
 
+import penguinMovies from "../assets/images/penguin-movies.avif";
+
 export const Projects = () => {
     const { inSpanish } = useLanguageStore();
     const TAGS = {
@@ -27,7 +29,7 @@ export const Projects = () => {
                 : "Online store for your favorite movies. Interface created with React and Tailwind. Features authentication with JWT and MongoDB database.",
             link: "https://svgl.vercel.app/",
             github: "https://github.com/dgox16/penguin-movies",
-            image: "/src/assets/images/penguin-movies.avif",
+            image: penguinMovies,
             tags: [TAGS.REACT, TAGS.MONGO],
         },
     ];
