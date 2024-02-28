@@ -1,5 +1,7 @@
 import { AboutMe } from "./sections/AboutMe";
+import { Contact } from "./sections/Contact";
 import { Experience } from "./sections/Experience";
+import { Footer } from "./sections/Footer";
 import { Header } from "./sections/Header";
 import { NavbarMain } from "./sections/Navbar";
 import { Projects } from "./sections/Projects";
@@ -23,6 +25,9 @@ function App() {
                 <Projects />
                 <SeparatorSection />
                 <Skills />
+                <SeparatorSection />
+                <Contact />
+                <Footer />
             </main>
         </div>
     );

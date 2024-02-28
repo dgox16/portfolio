@@ -49,7 +49,7 @@ export const GridLogos = () => {
     const { darkMode } = useThemeStore();
 
     return (
-        <div className="flex justify-center mx-7 xl:mx-0 mb-8">
+        <div className="flex justify-center mx-7 xl:mx-0">
             <div className="w-full md:w-recommend bg-mantle p-5 rounded-2xl">
                 <div className="gap-4 grid grid-cols-4 md:grid-cols-5">
                     {listIcons.map((Icon, index) => (
