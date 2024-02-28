@@ -15,6 +15,11 @@ export const NavbarMain = () => {
 
     const navItems = [
         {
+            title: inSpanish ? "Acerca de mi" : "About me",
+            label: "about-me",
+            url: "about-me",
+        },
+        {
             title: inSpanish ? "Experiencia" : "Experience",
             label: "experience",
             url: "experience",
@@ -23,11 +28,6 @@ export const NavbarMain = () => {
             title: inSpanish ? "Proyectos" : "Projects",
             label: "projects",
             url: "projects",
-        },
-        {
-            title: inSpanish ? "Acerca de mi" : "About me",
-            label: "about-me",
-            url: "about-me",
         },
         {
             title: inSpanish ? "Habilidades" : "Skills",
