@@ -1,4 +1,3 @@
-import React from "react";
 import { GridLogos } from "../components/Skills/GridLogos";
 import { TitleText } from "../components/Texts/TitleText";
 import { useLanguageStore } from "../store/languageStore";

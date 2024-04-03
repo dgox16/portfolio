@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { TitleText } from "../components/Texts/TitleText";
 import { useLanguageStore } from "../store/languageStore";
