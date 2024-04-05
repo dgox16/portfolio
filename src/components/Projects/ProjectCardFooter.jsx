@@ -16,7 +16,7 @@ export const ProjectCardFooter = ({ link, github }) => {
                         }}
                         whileTap={{ scale: 0.9 }}
                         type="button"
-                        className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text"
+                        className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text font-medium"
                         href={github}
                         rel="noreferrer"
                         target="_blank"
@@ -37,7 +37,7 @@ export const ProjectCardFooter = ({ link, github }) => {
                         }}
                         whileTap={{ scale: 0.9 }}
                         type="button"
-                        className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text"
+                        className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text font-medium"
                         href={link}
                         rel="noreferrer"
                         target="_blank"
