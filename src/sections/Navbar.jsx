@@ -46,6 +46,7 @@ export const NavbarMain = () => {
                     {navItems.map((link, index) => (
                         <Link
                             key={index}
+                            href={link.url}
                             to={link.url}
                             spy={true}
                             offset={-90}
