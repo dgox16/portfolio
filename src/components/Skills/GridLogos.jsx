@@ -1,10 +1,14 @@
 import { IconContext } from "react-icons";
 import { tags } from "../../utils/tagsProgramming";
 import { useScreenSize } from "../../hooks/UseSizeWindow";
+import { useLanguageStore } from "../../store/languageStore";
 
 export const GridLogos = () => {
     const { width } = useScreenSize();
+    const { inSpanish } = useLanguageStore();
+
     const sizeIcon = width >= 1024 ? "52" : width >= 640 ? "40" : "35";
+
     const skills = [
         {
             name: "Frontend",
@@ -15,11 +19,11 @@ export const GridLogos = () => {
             tags: [tags.django, tags.express, tags.supabase, tags.mySql, tags.mongo, tags.sqlite],
         },
         {
-            name: "Languages",
+            name: inSpanish ? "Lenguajes" : "Languages",
             tags: [tags.javascript, tags.typescript, tags.python, tags.css, tags.html, tags.bash],
         },
         {
-            name: "Tools",
+            name: inSpanish ? "Herramientas" : "Tools",
             tags: [tags.git, tags.linux, tags.nodeJs, tags.vscode, tags.neovim, tags.npm],
         },
     ];
