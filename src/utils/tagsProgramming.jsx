@@ -32,7 +32,7 @@ export const tags = {
         color: "bg-blue",
     },
     tailwind: {
-        name: "Tailwind CSS",
+        name: "TailwindCSS",
         icon: <SiTailwindcss />,
         color: "bg-sapphire",
     },
