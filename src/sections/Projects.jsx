@@ -1,6 +1,6 @@
 import { TitleText } from "../components/Texts/TitleText";
 import { useLanguageStore } from "../store/languageStore";
-import { tags } from "../utils/tagsProgramming"; // Importa el objeto tags desde el archivo tags.js
+import { tags } from "../utils/tagsProgramming";
 import penguinMovies from "../assets/images/penguin-movies.avif";
 import miGraduacion from "../assets/images/mi-graduacion.avif";
 import { ProjectCard } from "../components/Projects/ProjectCard";
@@ -13,7 +13,7 @@ export const Projects = () => {
             title: "Penguin Movies",
             description: inSpanish
                 ? "Tienda Online de tus películas favoritas. Cuenta con autenticación con JWT, manejo de carrito de compras y base de datos MongoDB."
-                : "Online store for your favorite movies. Interface created with React and Tailwind. Features authentication with JWT and MongoDB database.",
+                : "Online store for your favorite movies. It features JWT authentication, shopping cart management, and MongoDB database.",
             link: "https://penguin-movies.vercel.app/",
             github: "https://github.com/dgox16/penguin-movies",
             image: penguinMovies,
@@ -22,10 +22,10 @@ export const Projects = () => {
         {
             title: "Mi graduación",
             description: inSpanish
-                ? "Tienda Online de tus películas favoritas. Interfaz creada con React y Tailwind. Cuenta con autenticación con JWT y base de datos MongoDB."
+                ? "Pagina realizada para la invitación a una graduación de licenciatura. Desarrollada con Astro y un backend para el manejo de invitados. "
                 : "Online store for your favorite movies. Interface created with React and Tailwind. Features authentication with JWT and MongoDB database.",
-            link: "https://penguin-movies.vercel.app/",
-            github: "https://github.com/dgox16/penguin-movies",
+            link: "https://landing-page-graduacion.vercel.app/",
+            github: "https://github.com/dgox16/landingPage_Graduacion",
             image: miGraduacion,
             tags: [tags.astro, tags.tailwind, tags.supabase],
         },

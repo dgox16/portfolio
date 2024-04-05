@@ -17,6 +17,8 @@ export const ProjectCardFooter = ({ link, github }) => {
                     type="button"
                     className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text"
                     href={github}
+                    rel="noreferrer"
+                    target="_blank"
                     role="link"
                 >
                     Github
@@ -36,6 +38,8 @@ export const ProjectCardFooter = ({ link, github }) => {
                     type="button"
                     className="w-24 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text"
                     href={link}
+                    rel="noreferrer"
+                    target="_blank"
                     role="link"
                 >
                     Preview
