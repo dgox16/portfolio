@@ -12,7 +12,7 @@ export const TitleText = ({ children, color }) => {
         <div className="w-full mx-auto">
             <div className="text-center ">
                 <div className="relative flex flex-col items-center">
-                    <h1 className="text-[25px] sm:text-[30px] md:text-[37px] lg:text-[43px] font-bold text-text">
+                    <h1 className="uppercase text-[25px] sm:text-[30px] md:text-[37px] lg:text-[43px] font-bold text-text">
                         {children}
                     </h1>
                     <div className="flex w-24 mt-1 mb-10 overflow-hidden rounded">
