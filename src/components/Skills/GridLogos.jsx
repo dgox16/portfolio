@@ -32,14 +32,17 @@ export const GridLogos = () => {
         <div className="flex justify-center mx-7 xl:mx-0">
             <div className="w-full md:w-recommend">
                 <div className="gap-3 md:gap-6 lg:gap-14 grid grid-cols-1 md:grid-cols-2">
-                    {skills.map(({ name, tags }) => (
-                        <div className="bg-mantle p-6 xs:p-8">
+                    {skills.map(({ name, tags }, index) => (
+                        <div className="bg-mantle p-6 xs:p-8" key={`skill-${index + index}`}>
                             <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-center text-text">
                                 {name}
                             </p>
                             <div className="grid gap-6 xs:gap-8 grid-cols-3 mt-9">
-                                {tags.map((tag, i) => (
-                                    <div className="flex flex-col justify-center items-center">
+                                {tags.map((tag, index) => (
+                                    <div
+                                        className="flex flex-col justify-center items-center"
+                                        key={`skillElement-${index + index}`}
+                                    >
                                         <div
                                             className={`flex size-14 xs:size-16 sm:size-20 lg:size-24 text-base items-center justify-center rounded-full ${tag.color} p-2 `}
                                             title={tag.name}

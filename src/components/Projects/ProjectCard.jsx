@@ -11,9 +11,9 @@ export const ProjectCard = ({ image, title, description, tags, link, github }) =
                     src={image}
                 />
                 <div className="flex flex-col items-center text-center">
-                    <h3 className="text-[18px] xs:text-[27px] sm:text-[40px] md:text-[30px] lg:text-[40px] font-extrabold text-text mt-6 uppercase">
+                    <h1 className="text-[18px] xs:text-[27px] sm:text-[40px] md:text-[30px] lg:text-[40px] font-extrabold text-text mt-6 uppercase">
                         {title}
-                    </h3>
+                    </h1>
                     <ProjectCardTags tags={tags} />
                     <p className="mt-5 text-[13px] xs:text-[15px] sm:text-[18px] md:text-[15px] lg:text-[19px] text-subtext1">
                         {description}
