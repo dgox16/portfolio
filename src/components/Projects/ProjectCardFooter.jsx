@@ -5,7 +5,7 @@ export const ProjectCardFooter = ({ link, github }) => {
                 {github && (
                     <a
                         type="button"
-                        className="w-24 hover:scale-105 transition rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text font-medium"
+                        className="w-24 hover:scale-105 transition duration-150 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text font-medium"
                         href={github}
                         rel="noreferrer"
                         target="_blank"
@@ -17,7 +17,7 @@ export const ProjectCardFooter = ({ link, github }) => {
                 {link && (
                     <a
                         type="button"
-                        className="w-24 hover:scale-105 transition rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text font-medium"
+                        className="w-24 hover:scale-105 transition duration-150 rounded-xl h-10 flex justify-center text-text items-center bg-crust border-2 border-text font-medium"
                         href={link}
                         rel="noreferrer"
                         target="_blank"

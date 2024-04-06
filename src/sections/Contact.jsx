@@ -21,7 +21,7 @@ export const Contact = () => {
             <a className="flex justify-center mt-10 mb-2" href="mailto:dgox16@gmail.com">
                 <button
                     type="button"
-                    className=" w-64 xs:w-72 sm:w-96 p-8 text-base flex items-center justify-center font-display font-bold rounded-xl h-12 bg-gradient-to-tr from-green via-teal to-sapphire hover:scale-105 transition"
+                    className=" w-64 xs:w-72 sm:w-96 p-8 text-base flex items-center justify-center font-display font-bold rounded-xl h-12 bg-gradient-to-tr from-green via-teal to-sapphire hover:scale-105 transition duration-150"
                 >
                     <IconContext.Provider value={{ size: sizeIcon }}>
                         <div className="mr-3">

@@ -26,3 +26,9 @@ html,
 body {
     overflow-x: hidden;
 }
+
+/* body * {
+
+    @apply transition-transform duration-700;
+    @apply transition-colors duration-100;
+} */

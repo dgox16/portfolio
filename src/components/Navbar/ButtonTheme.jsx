@@ -18,7 +18,7 @@ export const ButtonTheme = () => {
 
     return (
         <button
-            className="flex hover:scale-110 transition justify-center text-mauve dark:text-yellow items-center mr-2 rounded-xl h-10 w-10 "
+            className="flex hover:scale-110 transition duration-150 justify-center text-mauve dark:text-yellow items-center mr-2 rounded-xl h-10 w-10 "
             title="ChangeTheme"
             type="button"
             onClick={changeTheme}

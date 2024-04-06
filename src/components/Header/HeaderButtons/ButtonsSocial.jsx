@@ -7,7 +7,7 @@ const OneButtonSocial = ({ children, url, title }) => {
         <a href={url} target="_blank" rel="noopener noreferrer">
             <button
                 type="button"
-                className="m-auto w-10 h-10 hover:scale-105 transition xs:w-12 rounded-xl xs:h-12 flex justify-center text-text items-center bg-crust border-2 border-text"
+                className="m-auto w-10 h-10 hover:scale-105 transition duration-150 xs:w-12 rounded-xl xs:h-12 flex justify-center text-text items-center bg-crust border-2 border-text"
                 title={title}
             >
                 {children}

@@ -11,7 +11,7 @@ import "@fontsource-variable/onest";
 
 function App() {
     return (
-        <div className="dark:mocha bg-base latte">
+        <div className="dark:mocha bg-base latte transition duration-0 ">
             <header>
                 <NavbarMain />
                 <Header />
