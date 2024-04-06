@@ -33,7 +33,10 @@ export const GridLogos = () => {
             <div className="w-full md:w-recommend">
                 <div className="gap-3 md:gap-6 lg:gap-14 grid grid-cols-1 md:grid-cols-2">
                     {skills.map(({ name, tags }, index) => (
-                        <div className="bg-mantle p-6 xs:p-8" key={`skill-${index + index}`}>
+                        <div
+                            className="bg-mantle rounded-2xl p-6 xs:p-8"
+                            key={`skill-${index + index}`}
+                        >
                             <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-center text-text">
                                 {name}
                             </p>

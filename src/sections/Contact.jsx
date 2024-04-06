@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import { TbMail } from "react-icons/tb";
 import { TitleText } from "../components/Texts/TitleText";
@@ -20,14 +19,9 @@ export const Contact = () => {
                     : "I'm open to any opportunity and/or proposal. Feel free to contact me and share any of your ideas, and I'll get back to you as soon as possible."}
             </p>
             <a className="flex justify-center mt-10 mb-2" href="mailto:dgox16@gmail.com">
-                <motion.button
-                    whileHover={{
-                        scale: 1.07,
-                    }}
-                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                    whileTap={{ scale: 0.9 }}
+                <button
                     type="button"
-                    className="w-64 xs:w-72 sm:w-96 p-8 text-base flex items-center justify-center font-display font-bold rounded-xl h-12 bg-gradient-to-tr from-green via-teal to-sapphire"
+                    className=" w-64 xs:w-72 sm:w-96 p-8 text-base flex items-center justify-center font-display font-bold rounded-xl h-12 bg-gradient-to-tr from-green via-teal to-sapphire hover:scale-105 transition"
                 >
                     <IconContext.Provider value={{ size: sizeIcon }}>
                         <div className="mr-3">
@@ -37,7 +31,7 @@ export const Contact = () => {
                     <p className="text-[19px] xs:text-[20px] md:text-[30px]">
                         {inSpanish ? "Vamos a hablar!" : "Let's Talk!"}
                     </p>
-                </motion.button>
+                </button>
             </a>
             <a
                 href="https://wa.me/524451312061"

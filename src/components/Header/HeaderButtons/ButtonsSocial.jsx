@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { IconContext } from "react-icons";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { TbMail } from "react-icons/tb";
@@ -6,18 +5,13 @@ import { TbMail } from "react-icons/tb";
 const OneButtonSocial = ({ children, url, title }) => {
     return (
         <a href={url} target="_blank" rel="noopener noreferrer">
-            <motion.button
-                whileHover={{
-                    scale: 1.06,
-                }}
-                transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                whileTap={{ scale: 0.9 }}
+            <button
                 type="button"
-                className="m-auto w-10 h-10  xs:w-12 rounded-xl xs:h-12 flex justify-center text-text items-center bg-crust border-2 border-text"
+                className="m-auto w-10 h-10 hover:scale-105 transition xs:w-12 rounded-xl xs:h-12 flex justify-center text-text items-center bg-crust border-2 border-text"
                 title={title}
             >
                 {children}
-            </motion.button>
+            </button>
         </a>
     );
 };
