@@ -52,7 +52,7 @@ export const NavbarMain = () => {
                             offset={-90}
                             smooth={true}
                             duration={500}
-                            className="relative block px-2 py-2 text-text font-medium transition hover:text-lavender"
+                            className="relative block px-2 py-2 text-text font-semibold transition hover:text-lavender"
                             aria-label={link.label}
                         >
                             {link.title}
