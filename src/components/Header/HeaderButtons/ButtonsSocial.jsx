@@ -20,14 +20,6 @@ export const ButtonsSocial = () => {
     return (
         <div className="flex justify-center lg:justify-normal col-span-7 mt-4 lg:mt-0">
             <div className="lg:gap-14 grid grid-cols-4 justify-center lg:justify-normal w-4/5 lg:w-1/4">
-                <OneButtonSocial
-                    url={"https://www.instagram.com/diego_gomez16/"}
-                    title={"Instagram"}
-                >
-                    <IconContext.Provider value={{ size: "20" }}>
-                        <FaInstagram />
-                    </IconContext.Provider>
-                </OneButtonSocial>
                 <OneButtonSocial url={"https://github.com/dgox16"} title={"Github"}>
                     <IconContext.Provider value={{ size: "20" }}>
                         <FaGithub />
@@ -44,6 +36,14 @@ export const ButtonsSocial = () => {
                 >
                     <IconContext.Provider value={{ size: "20" }}>
                         <FaLinkedin />
+                    </IconContext.Provider>
+                </OneButtonSocial>
+                <OneButtonSocial
+                    url={"https://www.instagram.com/diego_gomez16/"}
+                    title={"Instagram"}
+                >
+                    <IconContext.Provider value={{ size: "20" }}>
+                        <FaInstagram />
                     </IconContext.Provider>
                 </OneButtonSocial>
             </div>
