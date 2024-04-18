@@ -17,7 +17,7 @@ export const HeaderTitle = () => {
                     {inSpanish ? " fullstack." : " developer."}
                 </TextTitleGradientHeader>
             </div>
-            <p className="text-[15px] xs:text-[16px] sm:text-[19px] md:text-[22px] lg:text-[18px] xl:text-[22px] text-subtext1 mt-2 text-center lg:text-left font-medium pr-0 lg:pr-20">
+            <p className="text-[15px] xs:text-[16px] sm:text-[19px] md:text-[22px] lg:text-[18px] xl:text-[22px] text-subtext1 mt-2 text-center lg:text-left font-medium pr-0 lg:pr-20 text-pretty">
                 {inSpanish
                     ? "Diseño y creo aplicaciones funcionales y hermosas con pasión y enfoque en la experiencia del usuario y la alta calidad."
                     : "I design and create functional and beautiful applications with passion and a focus on user experience and high quality."}

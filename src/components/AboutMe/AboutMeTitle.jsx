@@ -5,7 +5,7 @@ export const AboutMeTitle = () => {
     const { inSpanish } = useLanguageStore();
 
     return (
-        <div className="flex justify-center mx-7 xl:mx-0 mb-0 md:mb-16" id="about-me">
+        <div className="flex justify-center mx-7 xl:mx-0 mb-8 md:mb-16" id="about-me">
             <div className="w-full lg:w-recommend">
                 <TitleText color={"blue"}>{inSpanish ? "Acerca de Mi" : "About Me"}</TitleText>
                 <div className="flex justify-center">

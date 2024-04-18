@@ -6,9 +6,9 @@ export const Grid = () => {
     const { inSpanish } = useLanguageStore();
 
     return (
-        <div className="flex justify-center m-12 mx-7 xl:mx-0">
+        <div className="flex justify-center mt-6 md:mt-12 mx-7 xl:mx-0">
             <div className="w-full md:w-recommend">
-                <div className="gap-5 md:gap-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                <div className="gap-8 sm:gap-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
                     <ElementGrid colorStyle={1} headElement={"1+"}>
                         {inSpanish
                             ? "Más de un año de experiencia laboral en el Desarollo Web con tecnologías como Django y JavaScript."
