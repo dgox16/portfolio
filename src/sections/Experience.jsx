@@ -33,7 +33,7 @@ export const Experience = () => {
                             <p className="text-[20px] xs:text-[22px] sm:text-[25px] md:text-[30px] font-semibold text-text text-center sm:text-left">
                                 {item.job}
                             </p>
-                            <p className="text-[15px] xs:text-[17px] sm:text-[20px] md:text-[25px] font-medium text-subtext1 mb-2 md:mb-4 text-center sm:text-left">
+                            <p className="text-[15px] xs:text-[18px] sm:text-[20px] md:text-[25px] font-medium text-subtext1 mb-2 md:mb-4 text-center sm:text-left">
                                 {item.company}
                             </p>
                             <p className="text-[13px] xs:text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] text-subtext1 text-pretty text-center sm:text-left">

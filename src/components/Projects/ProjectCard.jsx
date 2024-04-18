@@ -11,11 +11,11 @@ export const ProjectCard = ({ image, title, description, tags, link, github }) =
                     src={image}
                 />
                 <div className="flex flex-col items-center text-center">
-                    <h1 className="text-[18px] xs:text-[27px] sm:text-[40px] md:text-[30px] lg:text-[40px] font-extrabold text-text mt-6 uppercase">
+                    <h1 className="text-[19px] xs:text-[23px] sm:text-[31px] md:text-[26px] lg:text-[32px] font-semibold text-text mt-6 mb-1 uppercase">
                         {title}
                     </h1>
                     <ProjectCardTags tags={tags} />
-                    <p className="mt-5 text-[13px] xs:text-[15px] sm:text-[18px] md:text-[15px] lg:text-[19px] text-subtext1">
+                    <p className="mt-5 text-[13px] xs:text-[14px] sm:text-[18px] md:text-[15px] lg:text-[19px] text-subtext1">
                         {description}
                     </p>
                     <ProjectCardFooter link={link} github={github} />
