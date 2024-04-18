@@ -26,7 +26,9 @@ export const ButtonDownloadCv = () => {
                         <TbFileDownload />
                     </div>
                 </IconContext.Provider>
-                <p className="text-[15px]">{inSpanish ? "Descargar CV" : "Download CV"}</p>
+                <p className="text-[15px] lg:text-[13px] xl:text-[15px]">
+                    {inSpanish ? "Descargar CV" : "Download CV"}
+                </p>
             </button>
         </div>
     );

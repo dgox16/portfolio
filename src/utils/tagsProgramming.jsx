@@ -22,8 +22,10 @@ import {
     SiNodedotjs,
     SiNeovim,
     SiNpm,
+    SiPostgresql,
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export const tags = {
     react: {
@@ -74,12 +76,17 @@ export const tags = {
     sqlite: {
         name: "SQLite",
         icon: <SiSqlite />,
-        color: "bg-blue",
+        color: "bg-lavender",
     },
     mongo: {
         name: "MongoDB",
         icon: <SiMongodb />,
         color: "bg-green",
+    },
+    postgresql: {
+        name: "PostgreSQL",
+        icon: <SiPostgresql />,
+        color: "bg-blue",
     },
     express: {
         name: "ExpressJS",

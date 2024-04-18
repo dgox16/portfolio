@@ -29,14 +29,14 @@ export const Experience = () => {
                         </p>
                     </div>
                     <div className="flex justify-center">
-                        <div className="w-full md:w-recommend bg-mantle p-8 rounded-2xl">
-                            <p className="text-[18px] xs:text-[20px] sm:text-[25px] md:text-[30px] font-bold text-text">
+                        <div className="w-full md:w-recommend bg-mantle p-4 sm:p-6 md:p-8 rounded-2xl">
+                            <p className="text-[18px] xs:text-[22px] sm:text-[25px] md:text-[30px] font-bold text-text text-center sm:text-left">
                                 {item.job}
                             </p>
-                            <p className="text-[16px] xs:text-[18px]  sm:text-[20px] md:text-[25px] font-medium text-text mb-4">
+                            <p className="text-[16px] xs:text-[19px]  sm:text-[20px] md:text-[25px] font-medium text-subtext1 mb-4 text-center sm:text-left">
                                 {item.company}
                             </p>
-                            <p className="text-[14px] xs:text-[17px] md:text-[20px] text-subtext1 text-pretty">
+                            <p className="text-[13px] xs:text-[14px] sm:text-[15px] md:text-[20px] text-subtext1 text-pretty text-center sm:text-left">
                                 {item.description}
                             </p>
                         </div>
