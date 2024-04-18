@@ -7,7 +7,7 @@ export const GridLogos = () => {
     const { width } = useScreenSize();
     const { inSpanish } = useLanguageStore();
 
-    const sizeIcon = width >= 1024 ? "40" : width >= 768 ? "28" : "35";
+    const sizeIcon = width >= 1024 ? "40" : width >= 768 ? "28" : width >= 640 ? "40" : "28";
 
     const skills = [
         {
@@ -48,21 +48,21 @@ export const GridLogos = () => {
                             <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-center text-text">
                                 {name}
                             </p>
-                            <div className="grid gap-6 xs:gap-8 grid-cols-3 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 mt-9">
+                            <div className="grid gap-6 xs:gap-8 grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 mt-9">
                                 {tags.map((tag, index) => (
                                     <div
                                         className="flex flex-col justify-center items-center"
                                         key={`skillElement-${index + index}`}
                                     >
                                         <div
-                                            className={`flex size-14 xs:size-16 sm:size-20 md:size-16 lg:size-[4.5rem] xl:size-20 text-base items-center justify-center rounded-full ${tag.color} p-2 `}
+                                            className={`flex size-12 xs:size-[3.50rem] sm:size-20 md:size-14 lg:size-[4.5rem] xl:size-20 text-base items-center justify-center rounded-full ${tag.color} p-2 `}
                                             title={tag.name}
                                         >
                                             <IconContext.Provider value={{ size: sizeIcon }}>
                                                 {tag.icon}
                                             </IconContext.Provider>
                                         </div>
-                                        <span className="text-xs xs:text-sm sm:text-[15px] text-text mt-2">
+                                        <span className="text-xs xs:text-xs sm:text-[15px] md:text-[13px] lg:text-[15px] text-text mt-2 hidden xs:inline">
                                             {tag.name}
                                         </span>
                                     </div>

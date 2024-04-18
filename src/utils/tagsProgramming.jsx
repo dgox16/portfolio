@@ -25,11 +25,10 @@ import {
     SiPostgresql,
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 export const tags = {
     react: {
-        name: "React JS",
+        name: "ReactJS",
         icon: <FaReact />,
         color: "bg-blue",
     },
