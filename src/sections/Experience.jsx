@@ -23,8 +23,8 @@ export const Experience = () => {
             {experience.map((item, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 <React.Fragment key={index}>
-                    <div className="bg-green rounded-3xl p-2 px-6 my-3 md:my-8 inline-block mx-auto">
-                        <p className="text-[17px] md:text-[19px] font-medium text-base">
+                    <div className="bg-green rounded-3xl p-2 px-6 my-4 sm:my-7 inline-block mx-auto">
+                        <p className="text-[13px] xs:text-[14px] md:text-[19px] font-medium text-crust">
                             {item.date}
                         </p>
                     </div>
@@ -33,10 +33,10 @@ export const Experience = () => {
                             <p className="text-[18px] xs:text-[22px] sm:text-[25px] md:text-[30px] font-bold text-text text-center sm:text-left">
                                 {item.job}
                             </p>
-                            <p className="text-[16px] xs:text-[19px]  sm:text-[20px] md:text-[25px] font-medium text-subtext1 mb-4 text-center sm:text-left">
+                            <p className="text-[16px] xs:text-[19px] sm:text-[20px] md:text-[25px] font-medium text-subtext1 mb-4 text-center sm:text-left">
                                 {item.company}
                             </p>
-                            <p className="text-[13px] xs:text-[14px] sm:text-[15px] md:text-[20px] text-subtext1 text-pretty text-center sm:text-left">
+                            <p className="text-[13px] xs:text-[14px] sm:text-[17px] md:text-[17px] lg:text-[20px] text-subtext1 text-pretty text-center sm:text-left">
                                 {item.description}
                             </p>
                         </div>
