@@ -12,7 +12,7 @@ export const GridLogos = () => {
     const skills = [
         {
             name: "Frontend",
-            tags: [tags.react, tags.astro, tags.jinja, tags.bootstrap, tags.tailwind, tags.nextUi],
+            tags: [tags.react, tags.astro, tags.jinja, tags.bootstrap, tags.nextUi, tags.tailwind],
         },
         {
             name: "Backend",
@@ -28,7 +28,15 @@ export const GridLogos = () => {
         },
         {
             name: inSpanish ? "Lenguajes" : "Languages",
-            tags: [tags.javascript, tags.typescript, tags.python, tags.css, tags.html, tags.bash],
+            tags: [
+                tags.javascript,
+                tags.typescript,
+                tags.python,
+                tags.rust,
+                tags.css,
+                tags.html,
+                tags.bash,
+            ],
         },
         {
             name: inSpanish ? "Herramientas" : "Tools",
@@ -45,7 +53,7 @@ export const GridLogos = () => {
                             className="bg-mantle rounded-2xl p-6 xs:p-8"
                             key={`skill-${index + index}`}
                         >
-                            <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-center text-text">
+                            <p className="text-[18px] xs:text-[22px] sm:text-[24px] md:text-[26px] lg:text-[32px] font-medium text-center text-text uppercase">
                                 {name}
                             </p>
                             <div className="grid gap-6 xs:gap-8 grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 mt-9">

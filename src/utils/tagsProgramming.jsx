@@ -23,6 +23,7 @@ import {
     SiNeovim,
     SiNpm,
     SiPostgresql,
+    SiRust,
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 
@@ -116,6 +117,11 @@ export const tags = {
         name: "HTML",
         icon: <SiHtml5 />,
         color: "bg-peach",
+    },
+    rust: {
+        name: "Rust",
+        icon: <SiRust />,
+        color: "bg-red",
     },
     css: {
         name: "CSS",
