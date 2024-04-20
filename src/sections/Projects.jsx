@@ -33,7 +33,7 @@ export const Projects = () => {
 
     return (
         <div id="projects">
-            <TitleText color={"red"}>{inSpanish ? "Mis Proyectos" : "My Projects"}</TitleText>
+            <TitleText color={"red"}>{inSpanish ? "Proyectos" : "Projects"}</TitleText>
             <div className="flex justify-center mx-7 xl:mx-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-recommend md:gap-5 lg:gap-16">
                     {projects.map(({ image, title, description, tags, link, github }, index) => (

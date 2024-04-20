@@ -2,7 +2,7 @@ export const TextTitleHeader = ({ children }) => {
     return (
         <h1
             className={
-                "text-[22px] xs:text-[28px] sm:text-[40px]/[50px] md:text-[50px]/[60px] lg:text-[45px] xl:text-[55px]/[80px] font-extrabold text-text"
+                "text-[23px] xss:text-[26px] xs:text-[30px] sm:text-[40px]/[50px] md:text-[50px]/[60px] lg:text-[45px] xl:text-[55px]/[80px] font-extrabold text-text"
             }
         >
             {children}
@@ -12,7 +12,7 @@ export const TextTitleHeader = ({ children }) => {
 
 export const TextTitleGradientHeader = ({ children }) => {
     return (
-        <h1 className="text-[22px] xs:text-[28px] sm:text-[40px]/[50px] md:text-[50px]/[60px] lg:text-[45px] xl:text-[55px]/[80px] whitespace-pre-wrap bg-gradient-to-tr from-blue via-mauve to-pink text-transparent bg-clip-text  font-extrabold">
+        <h1 className="text-[23px] xss:text-[26px] xs:text-[30px] sm:text-[40px]/[50px] md:text-[50px]/[60px] lg:text-[45px] xl:text-[55px]/[80px] whitespace-pre-wrap bg-gradient-to-tr from-blue via-mauve to-pink text-transparent bg-clip-text  font-extrabold">
             {children}
         </h1>
     );

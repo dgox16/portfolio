@@ -17,9 +17,7 @@ export const Experience = () => {
     ];
     return (
         <div className="flex flex-col justify-center mx-7 xl:mx-0" id="experience">
-            <TitleText color={"green"}>
-                {inSpanish ? "Experiencia Laboral" : "Work experience"}
-            </TitleText>
+            <TitleText color={"green"}>{inSpanish ? "Experiencia" : "Experience"}</TitleText>
             {experience.map((item, index) => (
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
                 <React.Fragment key={index}>

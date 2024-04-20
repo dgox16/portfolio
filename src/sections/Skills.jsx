@@ -6,7 +6,7 @@ export const Skills = () => {
     const { inSpanish } = useLanguageStore();
     return (
         <div id="skills">
-            <TitleText color={"yellow"}>{inSpanish ? "Mis Habilidades" : "My Skills"}</TitleText>
+            <TitleText color={"yellow"}>{inSpanish ? "Habilidades" : "Skills"}</TitleText>
             <GridLogos />
         </div>
     );
