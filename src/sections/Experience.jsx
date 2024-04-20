@@ -28,7 +28,7 @@ export const Experience = () => {
                     </div>
                     <div className="flex justify-center">
                         <div className="w-full md:w-recommend bg-mantle p-5 sm:p-6 md:p-8 rounded-2xl">
-                            <p className="uppercase text-[19px]/[18px] xss:text-[20px]/[20px] xs:text-[22px]/[22px] sm:text-[24px] md:text-[30px] font-semibold text-text text-center sm:text-left">
+                            <p className="uppercase text-[19px]/[18px] xss:text-[20px]/[20px] xs:text-[22px]/[22px] sm:text-[24px] md:text-[30px] font-bold text-text text-center sm:text-left">
                                 {item.job}
                             </p>
                             <p className="text-[14px] xss:text-[16px] xs:text-[17px] sm:text-[19px] md:text-[25px] font-medium text-subtext1 mb-2 md:mb-4 text-center sm:text-left">

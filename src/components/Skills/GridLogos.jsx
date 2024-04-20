@@ -53,7 +53,7 @@ export const GridLogos = () => {
                             className="flex flex-col justify-center bg-mantle rounded-2xl p-6 xs:p-8"
                             key={`skill-${index + index}`}
                         >
-                            <div className="grid gap-6 xs:gap-8 grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 mb-7">
+                            <div className="grid gap-6 xs:gap-8 grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 mb-9">
                                 {tags.map((tag, index) => (
                                     <div
                                         className="flex flex-col justify-center items-center"
@@ -73,7 +73,7 @@ export const GridLogos = () => {
                                     </div>
                                 ))}
                             </div>
-                            <span className="text-[18px] xs:text-[22px] sm:text-[24px] md:text-[26px] lg:text-[32px] font-medium text-center text-text uppercase">
+                            <span className="text-[18px] xs:text-[22px] sm:text-[24px] md:text-[26px] lg:text-[32px] font-bold text-center text-text uppercase">
                                 {name}
                             </span>
                         </div>
