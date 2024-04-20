@@ -17,7 +17,7 @@ export const TitleText = ({ children, color }) => {
                     </h1>
                     <div className="flex w-24 mb-5 mt-1 md:mb-10 overflow-hidden rounded">
                         {stylesArray.map((item, index) => (
-                            <div key={index} className={item} />
+                            <div key={`line_${index + index}`} className={item} />
                         ))}
                     </div>
                 </div>

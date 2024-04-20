@@ -11,7 +11,7 @@ export const AboutMeTitle = () => {
                 <div className="flex justify-center">
                     <p
                         className={
-                            "text-[14px] xss:text-[14px] xs:text-[16px] sm:text-[17px] md:text-[18px] lg:text-[18px] xl:text-[23px] text-text text-center text-pretty"
+                            "text-[14px] xss:text-[14px] xs:text-[16px] sm:text-[17px] md:text-[18px] lg:text-[18px] xl:text-[20px] text-text text-center text-pretty"
                         }
                     >
                         {inSpanish

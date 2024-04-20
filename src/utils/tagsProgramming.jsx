@@ -121,7 +121,7 @@ export const tags = {
     rust: {
         name: "Rust",
         icon: <SiRust />,
-        color: "bg-red",
+        color: "bg-peach",
     },
     css: {
         name: "CSS",

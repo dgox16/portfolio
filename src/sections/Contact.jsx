@@ -11,9 +11,9 @@ export const Contact = () => {
     const sizeIcon = width > 768 ? 40 : width > 350 ? 30 : 20;
 
     return (
-        <div className="flex justify-center items-center flex-col">
+        <div className="flex flex-col justify-center items-center mx-7 xl:mx-0">
             <TitleText color={"teal"}>{inSpanish ? "Contacto" : "Contact"}</TitleText>
-            <p className="w-[28ch] xs:w-[29ch] sm:w-[40ch] text-center text-subtext1 font-medium text-[14px] xs:text-[15px] sm:text-[17px] md:text-[19px]">
+            <p className="w-full sm:w-[40ch] text-center text-subtext1 font-medium text-[14px] xs:text-[15px] sm:text-[17px] md:text-[19px]">
                 {inSpanish
                     ? "Estoy abierto a cualquier oportunidad y/o propuesta. No dudes en contactarme y compartirme cualquiera de tus ideas, que me pondré en contacto contigo lo antes posible."
                     : "I'm open to any opportunity and/or proposal. Feel free to contact me and share any of your ideas, and I'll get back to you as soon as possible."}

@@ -1,5 +1,5 @@
 import { IconContext } from "react-icons";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { TbMail } from "react-icons/tb";
 
 const OneButtonSocial = ({ children, url, title }) => {
@@ -38,12 +38,9 @@ export const ButtonsSocial = () => {
                         <FaLinkedin />
                     </IconContext.Provider>
                 </OneButtonSocial>
-                <OneButtonSocial
-                    url={"https://www.instagram.com/diego_gomez16/"}
-                    title={"Instagram"}
-                >
+                <OneButtonSocial url={"https://wa.me/524451312061"} title={"WhatsApp"}>
                     <IconContext.Provider value={{ size: "20" }}>
-                        <FaInstagram />
+                        <FaWhatsapp />
                     </IconContext.Provider>
                 </OneButtonSocial>
             </div>
