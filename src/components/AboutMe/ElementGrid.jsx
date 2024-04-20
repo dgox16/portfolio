@@ -15,7 +15,7 @@ export const ElementGrid = ({ children, headElement, colorStyle }) => {
             <div className="flex justify-center">
                 <p
                     className={
-                        "text-center w-full text-subtext1 text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] md:w-[80%]"
+                        "text-center w-full text-subtext1 text-[13px] xs:text-[15px] sm:text-[15px] md:text-[17px] lg:text-[16px] xl:text-[18px] md:w-[80%]"
                     }
                 >
                     {children}

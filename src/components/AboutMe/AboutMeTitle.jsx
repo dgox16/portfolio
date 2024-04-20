@@ -7,7 +7,7 @@ export const AboutMeTitle = () => {
     return (
         <div className="flex justify-center mx-7 xl:mx-0 mb-8 md:mb-16" id="about-me">
             <div className="w-full lg:w-recommend">
-                <TitleText color={"blue"}>{inSpanish ? "Sobre Mi" : "About Me"}</TitleText>
+                <TitleText color={"blue"}>{inSpanish ? "Sobre mi" : "About Me"}</TitleText>
                 <div className="flex justify-center">
                     <p
                         className={
