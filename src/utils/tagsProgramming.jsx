@@ -24,6 +24,7 @@ import {
     SiNpm,
     SiPostgresql,
     SiRust,
+    SiLua,
 } from "react-icons/si";
 import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
 
@@ -132,6 +133,11 @@ export const tags = {
         name: "Bash",
         icon: <SiGnubash />,
         color: "bg-text",
+    },
+    lua: {
+        name: "Lua",
+        icon: <SiLua />,
+        color: "bg-sapphire",
     },
     git: {
         name: "Git",

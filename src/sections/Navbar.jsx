@@ -39,9 +39,13 @@ export const NavbarMain = () => {
     return (
         <header className="fixed top-0 z-10 flex items-center justify-center w-full mx-auto bg-crust backdrop-blur bg-opacity-80">
             <div className="w-recommend flex h-16 flex-row justify-between items-center mx-7 my-auto">
-                <a onClick={() => scrollToTop()} className="font-extrabold text-text" href="#">
+                <button
+                    onClick={() => scrollToTop()}
+                    className="font-extrabold text-text"
+                    type="button"
+                >
                     {inSpanish ? "PORTAFOLIO" : "PORTFOLIO"}
-                </a>
+                </button>
                 <nav className="hidden md:flex flex-row">
                     {navItems.map((link, index) => (
                         <Link

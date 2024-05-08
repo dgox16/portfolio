@@ -3,6 +3,7 @@ import { useLanguageStore } from "../store/languageStore";
 import { tags } from "../utils/tagsProgramming";
 import penguinMovies from "../assets/images/penguin-movies.avif";
 import miGraduacion from "../assets/images/mi-graduacion.avif";
+import oldWorld from "../assets/images/oldworld.avif";
 import { ProjectCard } from "../components/Projects/ProjectCard";
 
 export const Projects = () => {
@@ -29,13 +30,22 @@ export const Projects = () => {
             image: miGraduacion,
             tags: [tags.astro, tags.tailwind, tags.supabase],
         },
+        {
+            title: "OldWorld.nvim",
+            description: inSpanish
+                ? "Tema oscuro desarrollado con Lua para el editor de código de NeoVim con colores relajantes."
+                : "Dark theme developed with Lua for the NeoVim code editor with relaxing colors.",
+            github: "https://github.com/dgox16/oldworld.nvim",
+            image: oldWorld,
+            tags: [tags.neovim, tags.lua],
+        },
     ];
 
     return (
         <div id="projects">
             <TitleText color={"red"}>{inSpanish ? "Proyectos" : "Projects"}</TitleText>
             <div className="flex justify-center mx-7 xl:mx-0">
-                <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-recommend md:gap-5 lg:gap-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 w-full md:w-recommend gap-4 md:gap-4">
                     {projects.map(({ image, title, description, tags, link, github }, index) => (
                         <ProjectCard
                             image={image}

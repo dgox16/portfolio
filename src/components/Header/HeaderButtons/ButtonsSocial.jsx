@@ -1,5 +1,5 @@
 import { IconContext } from "react-icons";
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { TbMail } from "react-icons/tb";
 
 const OneButtonSocial = ({ children, url, title }) => {

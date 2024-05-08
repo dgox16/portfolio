@@ -27,8 +27,17 @@ body {
     overflow-x: hidden;
 }
 
+/* the slides */
+.slick-list {
+    margin: 0 -7px;
+}
+.slick-slide > div {
+    padding: 0 7px;
+}
+
 /* body * {
 
     @apply transition-transform duration-700;
     @apply transition-colors duration-100;
 } */
+

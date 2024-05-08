@@ -6,10 +6,10 @@ export const ButtonDownloadCv = () => {
     const { inSpanish } = useLanguageStore();
 
     const handleDownload = () => {
-        const url = "/Resume-DiegoArmando.pdf";
+        const url = "/resume_DiegoArmando.pdf";
         const link = document.createElement("a");
         link.href = url;
-        link.setAttribute("download", "cv.pdf");
+        link.setAttribute("download", "resume_DiegoArmando.pdf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

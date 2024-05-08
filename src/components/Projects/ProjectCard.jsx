@@ -3,8 +3,8 @@ import { ProjectCardTags } from "./ProjectCardTags";
 
 export const ProjectCard = ({ image, title, description, tags, link, github }) => {
     return (
-        <div className="flex justify-center mb-4">
-            <div className="w-full bg-mantle p-5 sm:p-8 md:p-4 lg:p-8 rounded-2xl">
+        <div className="flex justify-center">
+            <div className="w-full bg-mantle p-5 sm:p-8 md:p-4 lg:p-3 rounded-2xl">
                 <img
                     alt="Penguin Movies"
                     className="rounded-2xl my-auto mx-auto w-full md:w-full lg:w-full"
