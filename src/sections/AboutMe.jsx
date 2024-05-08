@@ -8,19 +8,19 @@ export const AboutMe = () => {
         <div className="flex justify-center mx-7 xl:mx-0 mb-8 md:mb-16" id="about-me">
             <div className="w-full lg:w-recommend">
                 <TitleText color={"blue"}>{inSpanish ? "Sobre mi" : "About Me"}</TitleText>
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center items-center">
                     <p
                         className={
-                            "text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-text text-center text-pretty"
+                            "w-full lg:w-[75ch] text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] xl:text-[20px] text-text text-center text-pretty"
                         }
                     >
                         {inSpanish
                             ? "Soy un desarrollador Full Stack de 24 años de edad. Mi experiencia abarca tanto el desarrollo backend utilizando tecnologías como Django, Rust (con Axum), Supabase y Express JS, como el frontend con React, Astro, Tailwind CSS y HTML. Tanto en proyectos personales como en el ámbito laboral, he trabajado con bases de datos tanto relacionales (PostgreSQL, SQLite) como no relacionales (MongoDB)."
-                            : "I'm an enthusiastic technology enthusiast. I'm 24 years old and I am from Mexico. I have loved computer science since I was a child, and my dream has always been to be a programmer and make a living from it. Working and learning from something you love makes everything easier."}
+                            : "I am a 24-year-old Full Stack developer. My experience spans both backend development using technologies such as Django, Rust (with Axum), Supabase, and Express JS, as well as frontend with React, Astro, Tailwind CSS, and HTML. In both personal projects and professional settings, I have worked with both relational databases (PostgreSQL, SQLite) and non-relational databases (MongoDB)."}
                     </p>
                     <p
                         className={
-                            "text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-text text-center text-pretty mt-7"
+                            "w-full lg:w-[75ch] text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] xl:text-[20px] text-text text-center text-pretty mt-4 md:mt-7"
                         }
                     >
                         {inSpanish
@@ -29,7 +29,7 @@ export const AboutMe = () => {
                     </p>
                     <p
                         className={
-                            "text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] text-text text-center text-pretty mt-7"
+                            "w-full lg:w-[75ch] text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] xl:text-[20px] text-text text-center text-pretty mt-4 md:mt-7"
                         }
                     >
                         {inSpanish
