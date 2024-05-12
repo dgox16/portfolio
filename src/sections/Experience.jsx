@@ -1,6 +1,7 @@
 import React from "react";
 import { useLanguageStore } from "../store/languageStore";
 import { TitleText } from "../components/Texts/TitleText";
+import { ExperienceItem } from "../components/Experience/ExperienceItem";
 
 export const Experience = () => {
     const { inSpanish } = useLanguageStore();
@@ -16,8 +17,8 @@ export const Experience = () => {
         },
         {
             date: inSpanish ? "Febrero 2024 - Presente" : "February 2024 - Present",
-            job: "Frontend Freelancer (Astro)",
-            company: "",
+            job: inSpanish ? "Desarrollador Frontend (Astro)" : "Frontend Developer (Astro)",
+            company: "Freelancer",
             description: inSpanish
                 ? "He trabajado como Freelancer en varios proyectos de creación de Landing Pages. Para desarrollar estas páginas, he utilizado herramientas como React, Supabase, Express, TailwindCSS y Astro."
                 : "I have worked as a Freelancer on several projects creating Landing Pages. To develop these pages, I have used tools like React, Supabase, Express, TailwindCSS, and Astro.",
@@ -33,31 +34,13 @@ export const Experience = () => {
     ];
 
     return (
-        <div className="flex flex-col justify-center mx-7 xl:mx-0" id="experience">
-            <TitleText color={"green"}>{inSpanish ? "Experiencia" : "Experience"}</TitleText>
-            {experience.map((item, index) => (
-                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                <React.Fragment key={index}>
-                    <div className="bg-green rounded-3xl py-2 px-4 sm:px-6 my-4 sm:my-7 inline-block mx-auto">
-                        <p className="text-[13px] xs:text-[14px] md:text-[19px] font-medium text-crust">
-                            {item.date}
-                        </p>
-                    </div>
-                    <div className="flex justify-center">
-                        <div className="w-full md:w-recommend bg-mantle p-5 sm:p-6 md:p-8 rounded-2xl">
-                            <p className="uppercase text-[19px]/[18px] xss:text-[20px]/[20px] xs:text-[22px]/[22px] sm:text-[24px] md:text-[30px] font-bold text-text text-center sm:text-left text-pretty">
-                                {item.job}
-                            </p>
-                            <p className="text-[14px] xss:text-[16px] xs:text-[17px] sm:text-[19px] md:text-[25px] font-medium text-subtext1 mb-2 md:mb-4 text-center sm:text-left">
-                                {item.company}
-                            </p>
-                            <p className="text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[15px] md:text-[17px] lg:text-[20px] text-subtext1 text-pretty text-center sm:text-left">
-                                {item.description}
-                            </p>
-                        </div>
-                    </div>
-                </React.Fragment>
-            ))}
+        <div className="flex justify-center items-center mx-7 xl:mx-0" id="experience">
+            <div className="w-full md:w-recommend">
+                <TitleText color={"green"}>{inSpanish ? "Experiencia" : "Experience"}</TitleText>
+                {experience.map((item, index) => (
+                    <ExperienceItem key={`experience_item_${index + index}`} item={item} />
+                ))}
+            </div>
         </div>
     );
 };

@@ -26,7 +26,6 @@ function App() {
                 <SeparatorSection />
                 <Skills />
                 <SeparatorSection />
-                <Contact />
                 <Footer />
             </main>
         </div>
