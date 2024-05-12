@@ -29,7 +29,7 @@ export const AboutMe = () => {
                 <TitleText color={"blue"}>{inSpanish ? "Sobre mi" : "About Me"}</TitleText>
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                     {width >= 1024 && <AboutMeSvg />}
-                    <div className="flex flex-col justify-center items-center lg:items-start col-span-2 lg:col-span-2 pl-6">
+                    <div className="flex flex-col justify-center items-center lg:items-start col-span-2 lg:col-span-2 pl-0 lg:pl-6">
                         <AboutMeParagraph>
                             {inSpanish ? (
                                 <span>
