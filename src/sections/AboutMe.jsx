@@ -7,7 +7,7 @@ const AboutMeParagraph = ({ children }) => {
     return (
         <p
             className={
-                "text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[17px] lg:text-[18px] xl:text-[19px] text-text text-center lg:text-left text-pretty"
+                "text-[13px] xss:text-[13px] xs:text-[14px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[19px] text-text text-center lg:text-left text-pretty"
             }
         >
             {children}
