@@ -15,7 +15,7 @@ export const Projects = () => {
             description: inSpanish
                 ? "Tienda Online de tus películas favoritas. Cuenta con autenticación con JWT, manejo de carrito de compras y base de datos MongoDB."
                 : "Online store for your favorite movies. It features JWT authentication, shopping cart management, and MongoDB database.",
-            link: "https://penguin-movies.vercel.app/",
+            link: "https://client-production-d073.up.railway.app/",
             github: "https://github.com/dgox16/penguin-movies",
             image: penguinMovies,
             tags: [tags.react, tags.tailwind, tags.mongo, tags.express],
