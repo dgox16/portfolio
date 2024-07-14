@@ -1,4 +1,3 @@
-import React from "react";
 import { useLanguageStore } from "../store/languageStore";
 import { TitleText } from "../components/Texts/TitleText";
 import { ExperienceItem } from "../components/Experience/ExperienceItem";
