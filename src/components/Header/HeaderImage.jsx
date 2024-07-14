@@ -1,4 +1,4 @@
-import photo from "../../assets/images/photo.avif";
+import photo from "../../assets/images/myPhoto.avif";
 
 export const HeaderImage = () => {
     return (
