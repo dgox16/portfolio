@@ -24,7 +24,7 @@ export const ExperienceItem = ({ item }) => {
             ) : (
                 <div>
                     <div className="flex justify-center">
-                        <div className="bg-green rounded-3xl py-2 px-4 sm:px-6 my-4 sm:my-7 w-fit">
+                        <div className="bg-green rounded-3xl py-2 px-4 sm:px-6 my-4 w-fit">
                             <p className="text-[13px] xs:text-[14px] md:text-[19px] font-medium text-crust">
                                 {item.date}
                             </p>
