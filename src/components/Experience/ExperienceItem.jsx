@@ -5,7 +5,7 @@ export const ExperienceItem = ({ item }) => {
     return (
         <>
             {width >= 850 ? (
-                <div className="relative ml-12 pb-12 grid before:absolute before:left-[-35px] before:block before:h-full before:border-l-2 before:border-surface2 before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
+                <div className="relative ml-12 pb-16 grid before:absolute before:left-[-35px] before:block before:h-full before:content-[''] md:grid-cols-5 md:gap-10 md:space-x-4]">
                     <div className="relative pb-12 md:col-span-2">
                         <div className="sticky top-0">
                             <span className="text-green -left-[44px] absolute rounded-full text-6xl">

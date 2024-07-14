@@ -36,6 +36,7 @@ export const Experience = () => {
         <div className="flex justify-center items-center mx-7 xl:mx-0" id="experience">
             <div className="w-full md:w-recommend">
                 <TitleText color={"green"}>{inSpanish ? "Experiencia" : "Experience"}</TitleText>
+                <div className="my-5" />
                 {experience.map((item, index) => (
                     <ExperienceItem key={`experience_item_${index + index}`} item={item} />
                 ))}
