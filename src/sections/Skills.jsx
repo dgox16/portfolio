@@ -13,7 +13,16 @@ export const Skills = () => {
     const skills = [
         {
             name: "Frontend",
-            tags: [tags.react, tags.astro, tags.jinja, tags.bootstrap, tags.nextUi, tags.tailwind],
+            tags: [
+                tags.react,
+                tags.astro,
+                tags.svelte,
+                tags.nextJs,
+                tags.jinja,
+                tags.tailwind,
+                tags.bootstrap,
+                tags.shadcnui,
+            ],
         },
         {
             name: "Backend",
@@ -41,7 +50,15 @@ export const Skills = () => {
         },
         {
             name: inSpanish ? "Herramientas" : "Tools",
-            tags: [tags.git, tags.linux, tags.nodeJs, tags.vscode, tags.neovim, tags.npm],
+            tags: [
+                tags.git,
+                tags.linux,
+                tags.nodeJs,
+                tags.docker,
+                tags.vscode,
+                tags.neovim,
+                tags.npm,
+            ],
         },
     ];
 

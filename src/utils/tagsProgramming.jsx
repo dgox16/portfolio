@@ -1,4 +1,3 @@
-import { FaReact } from "react-icons/fa";
 import {
     SiTailwindcss,
     SiMongodb,
@@ -6,7 +5,6 @@ import {
     SiAstro,
     SiSupabase,
     SiBootstrap,
-    SiNextui,
     SiDjango,
     SiJinja,
     SiMysql,
@@ -25,14 +23,30 @@ import {
     SiPostgresql,
     SiRust,
     SiLua,
+    SiSvelte,
+    SiReact,
+    SiShadcnui,
+    SiNextdotjs,
+    SiDocker,
 } from "react-icons/si";
-import { TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
+import { TbBrandVscode } from "react-icons/tb";
 
 export const tags = {
     react: {
         name: "ReactJS",
-        icon: <FaReact />,
+        icon: <SiReact />,
         color: "bg-blue",
+    },
+    svelte: {
+        name: "Svelte",
+        icon: <SiSvelte />,
+        color: "bg-peach",
+    },
+
+    shadcnui: {
+        name: "Shadcn/ui",
+        icon: <SiShadcnui />,
+        color: "bg-text",
     },
     tailwind: {
         name: "TailwindCSS",
@@ -49,14 +63,9 @@ export const tags = {
         icon: <SiBootstrap />,
         color: "bg-mauve",
     },
-    nextUi: {
-        name: "NextUI",
-        icon: <SiNextui />,
-        color: "bg-text",
-    },
     nextJs: {
         name: "NextJS",
-        icon: <TbBrandNextjs />,
+        icon: <SiNextdotjs />,
         color: "bg-text",
     },
     django: {
@@ -163,6 +172,11 @@ export const tags = {
         name: "Neovim",
         icon: <SiNeovim />,
         color: "bg-green",
+    },
+    docker: {
+        name: "Docker",
+        icon: <SiDocker />,
+        color: "bg-blue",
     },
     npm: {
         name: "NPM",
