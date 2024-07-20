@@ -25,7 +25,7 @@ export const Projects = () => {
             description: inSpanish
                 ? "Página realizada para la invitación a una graduación de licenciatura. Desarrollada con Astro y un backend para el manejo de invitados."
                 : "Page created for a bachelor's graduation invitation. Developed with Astro and a backend for managing guests.",
-            link: "https://landing-page-graduacion.vercel.app/",
+            link: "https://migraduacion.up.railway.app/",
             github: "https://github.com/dgox16/landingPage_Graduacion",
             image: miGraduacion,
             tags: [tags.astro, tags.tailwind, tags.supabase],
